@@ -1,0 +1,156 @@
+/* here you can put your own css to customize and override the theme */
+img[alt="www.000webhost.com"] {
+    display: none;
+}
+h3.title{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 17px;
+}
+.comment .item p{
+    font-family: "Lora", serif;
+    font-style: italic;
+    color: #000000;
+}
+
+.support .support-item{
+    padding-left: 25px;
+    background: #ffffff url("../images/support.png") no-repeat left top;
+    font-size: 19px;
+    color: #e02222;
+}
+.recruitment.nav li a{
+    font-weight: bold;
+}
+
+.new-main .new-title{
+    font-size: 19px !important;
+    font-weight: 600;
+}
+.nav-tabs li>a{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.content-page .pg-new-title{
+    font-weight: 500;
+    font-size: 25px;
+    border-bottom: 2px solid red;
+    padding:5px 15px;
+}
+
+.content-page .item-title{
+    font-weight: 500;
+    font-size: 22px;
+}
+.recruitment-detail p{
+    margin-bottom: 10px
+}
+.content-page .recruitment-detail h4.header-content {
+    font-weight: 500;
+}
+
+.content-page .recruitment-detail .bl-info{
+    padding-left: 20px;
+}
+.content-page .recruitment-detail hr{
+    margin: 0px 0;
+    border: 0;
+    border-top: 1px solid #3A3A3A;
+    border-bottom: 0;
+}
+
+.map{
+    text-align: center;
+}
+
+.new-detail p img,.articles_items_image {
+    max-width: 100% !important;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.tab-pane .new-item a img {
+    float: left;
+    margin-right: 10px;
+}
+.list-group-item{
+    border: 0px;
+    min-height: 60px;
+    background: none;
+    padding: 5px;
+    margin: 0px 0px 1px 0px !important;
+    display: inline-block;
+}
+.tab-content .new-item{
+    padding: 5px !important;
+}
+.tab-content .new-main{
+    padding-top: 5px;
+}
+
+#newest li.list-group-item .thumb{
+    float: left;
+    padding-right: 10px;
+}
+
+@media only screen and (min-width:360px) and (max-width: 480px) {
+    .carousel-slider .carousel-title-v6{
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 1.4;
+        color: #3f5862;
+    }
+    .page-slider.margin-bottom-40{
+        margin-bottom: 0px !important;
+    }
+    .pg-new-detail.recruitment-list  img{
+        width: 100%;
+        height: 100%;
+    }
+
+}
+
+#slider .owl-dots{
+    text-align: center;
+}
+#slider .owl-dots .owl-dot span {
+    width: 15px;
+    height: 15px;
+    margin: 5px 7px;
+    background: #D6D6D6;
+    display: block;
+    -webkit-backface-visibility: visible;
+    transition: opacity .2s ease;
+    border-radius: 15px !important;
+}
+#slider .owl-dots .owl-dot.active span, #slider .owl-dots .owl-dot:hover span {
+    background: #869791;
+}
+#slider .owl-dots .owl-dot:focus{
+    outline: none;
+}
+#video iframe{
+    width: 100% !important;
+    min-height: 260px;
+}
+
+.content-page p, .content-page .list-unstyled{
+    margin-bottom: 10px;
+}
+
+span.newest,span.hostest{
+    background: #ff2222;
+    padding: 2px 5px;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 24px !important;
+}
+
+#slider img{
+    width: 100%;
+}
+
+.pg-new-detail.recruitment-list  img{
+    padding-right: 10px;
+}

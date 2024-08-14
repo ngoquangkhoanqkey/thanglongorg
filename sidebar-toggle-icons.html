@@ -1,0 +1,3370 @@
+<!DOCTYPE html><html><head>
+<meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+        Error: Missing Controller    </title>
+<link href="favicon.ico" type="image/x-icon" rel="icon"><link href="favicon.ico" type="image/x-icon" rel="shortcut icon"> <style>
+    body {
+        font: 14px helvetica, arial, sans-serif;
+        color: #222;
+        background-color: #f8f8f8;
+        padding:0;
+        margin: 0;
+        max-height: 100%;
+    }
+
+    .code-dump,
+    pre {
+        background: #fefefe;
+        border: 1px solid #ddd;
+        padding: 5px;
+        white-space: pre-wrap;
+    }
+
+    header {
+        background-color: #C3232D;
+        color: #ffffff;
+        padding: 16px 10px;
+        border-bottom: 3px solid #626262;
+    }
+    .header-title {
+        margin: 0;
+        font-weight: normal;
+        font-size: 30px;
+        line-height: 64px;
+    }
+    .header-type {
+        opacity: 0.75;
+        display: block;
+        font-size: 16px;
+        line-height: 1;
+    }
+    .header-help {
+        font-size: 12px;
+        line-height: 1;
+        position: absolute;
+        top: 30px;
+        right: 16px;
+    }
+    .header-help a {
+        color: #fff;
+    }
+
+    .error-nav {
+        float: left;
+        width: 30%;
+    }
+    .error-contents {
+        padding: 10px 1%;
+        float: right;
+        width: 68%;
+    }
+
+    .error,
+    .error-subheading {
+        font-size: 18px;
+        margin-top: 0;
+        padding: 10px;
+        border: 1px solid #EDBD26;
+    }
+    .error-subheading {
+        background: #1798A5;
+        color: #fff;
+        border: 1px solid #02808C;
+    }
+    .error {
+        background: #ffd54f;
+    }
+    .customize {
+        opacity: 0.6;
+    }
+
+    .stack-trace {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    .stack-frame {
+        padding: 10px;
+        border-bottom: 1px solid #212121;
+    }
+    .stack-frame:last-child {
+        border-bottom: none;
+    }
+    .stack-frame a {
+        display: block;
+        color: #212121;
+        text-decoration: none;
+    }
+    .stack-frame.active {
+        background: #e5e5e5;
+    }
+    .stack-frame a:hover {
+        text-decoration: underline;
+    }
+    .stack-file,
+    .stack-function {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .stack-frame-file,
+    .stack-file {
+        font-family: consolas, monospace;
+    }
+    .stack-function {
+        font-weight: bold;
+    }
+    .stack-file {
+        font-size: 0.9em;
+        word-wrap: break-word;
+    }
+
+    .stack-details {
+        background: #ececec;
+        box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+        border: 1px solid #ababab;
+        padding: 10px;
+        margin-bottom: 18px;
+    }
+    .stack-frame-args {
+        float: right;
+    }
+
+    .toggle-link {
+        color: #1798A5;
+        text-decoration: none;
+    }
+    .toggle-link:hover {
+        text-decoration: underline;
+    }
+    .toggle-vendor-frames {
+        padding: 5px;
+        display: block;
+        text-align: center;
+    }
+
+    .code-excerpt {
+        width: 100%;
+        margin: 5px 0;
+        background: #fefefe;
+    }
+    .code-highlight {
+        display: block;
+        background: #fff59d;
+    }
+    .excerpt-line {
+        padding-left: 2px;
+    }
+    .excerpt-number {
+        background: #f6f6f6;
+        width: 50px;
+        text-align: right;
+        color: #666;
+        border-right: 1px solid #ddd;
+        padding: 2px;
+    }
+    .excerpt-number:after {
+        content: attr(data-number);
+    }
+
+    table {
+        text-align: left;
+    }
+    th, td {
+        padding: 4px;
+    }
+    th {
+        border-bottom: 1px solid #ccc;
+    }
+    </style>
+</head>
+<body>
+<header>
+<h1 class="header-title">
+Missing Controller <span class="header-type">Cake\Routing\Exception\MissingControllerException</span>
+</h1>
+<div class="header-help">
+<a target="_blank" href="https://book.cakephp.org/3.0/">Documentation</a>
+<a target="_blank" href="https://api.cakephp.org/">API</a>
+</div>
+</header>
+<div class="error-contents">
+<p class="error-subheading">
+<strong>Error: </strong>
+<em>ImgController</em> could not be found.
+</p>
+<div id="stack-frame-0" style="display:none;" class="stack-details">
+<span class="stack-frame-file">/home/hoanghahcm/domains/hoanghahcm.com/public_html/vendor/cakephp/cakephp/src/Http/ControllerFactory.php</span>
+<a href="#" class="toggle-link stack-frame-args" data-target="stack-args-0">toggle arguments</a>
+<table class="code-excerpt" cellspacing="0" cellpadding="0">
+<tbody><tr>
+<td class="excerpt-number" data-number="34"></td>
+<td class="excerpt-line"><code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">create</span><span style="color: #007700">(</span><span style="color: #0000BB">ServerRequest&nbsp;$request</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">Response&nbsp;$response</span><span style="color: #007700">)</span></span></code></td>
+</tr>
+<tr>
+<td class="excerpt-number" data-number="35"></td>
+<td class="excerpt-line"><code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">{</span></span></code></td>
+</tr>
+<tr>
+<td class="excerpt-number" data-number="36"></td>
+<td class="excerpt-line"><code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$className&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getControllerClass</span><span style="color: #007700">(</span><span style="color: #0000BB">$request</span><span style="color: #007700">);</span></span></code></td>
+</tr>
+<tr>
+<td class="excerpt-number" data-number="37"></td>
+<td class="excerpt-line"><code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">if&nbsp;(!</span><span style="color: #0000BB">$className</span><span style="color: #007700">)&nbsp;{</span></span></code></td>
+</tr>
+<tr>
+<td class="excerpt-number" data-number="38"></td>
+<td class="excerpt-line"><span class="code-highlight"><code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">missingController</span><span style="color: #007700">(</span><span style="color: #0000BB">$request</span><span style="color: #007700">);</span></span></code></span></td>
+</tr>
+<tr>
+<td class="excerpt-number" data-number="39"></td>
+<td class="excerpt-line"><code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">}</span></span></code></td>
+</tr>
+<tr>
+<td class="excerpt-number" data-number="40"></td>
+<td class="excerpt-line"><code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$reflection&nbsp;</span><span style="color: #007700">=&nbsp;new&nbsp;</span><span style="color: #0000BB">ReflectionClass</span><span style="color: #007700">(</span><span style="color: #0000BB">$className</span><span style="color: #007700">);</span></span></code></td>
+</tr>
+<tr>
+<td class="excerpt-number" data-number="41"></td>
+<td class="excerpt-line"><code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">if&nbsp;(</span><span style="color: #0000BB">$reflection</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">isAbstract</span><span style="color: #007700">()&nbsp;||&nbsp;</span><span style="color: #0000BB">$reflection</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">isInterface</span><span style="color: #007700">())&nbsp;{</span></span></code></td>
+</tr>
+<tr>
+<td class="excerpt-number" data-number="42"></td>
+<td class="excerpt-line"><code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">missingController</span><span style="color: #007700">(</span><span style="color: #0000BB">$request</span><span style="color: #007700">);</span></span></code></td>
+</tr>
+</tbody></table>
+<div id="stack-args-0" style="display: none;">
+<pre>object(Cake\Http\ServerRequest) {
+	params =&gt; [
+		'controller' =&gt; 'Img',
+		'action' =&gt; 'icons',
+		'pass' =&gt; [
+			(int) 0 =&gt; 'sidebar-toggle-icons.png'
+		],
+		'plugin' =&gt; null,
+		'_matchedRoute' =&gt; '/:controller/:action/*',
+		'_ext' =&gt; null,
+		'isAjax' =&gt; false
+	]
+	data =&gt; []
+	query =&gt; []
+	cookies =&gt; []
+	url =&gt; 'img/icons/sidebar-toggle-icons.png'
+	base =&gt; ''
+	webroot =&gt; '/'
+	here =&gt; '/img/icons/sidebar-toggle-icons.png'
+	trustProxy =&gt; false
+	[protected] _environment =&gt; [
+		'CONTEXT_DOCUMENT_ROOT' =&gt; '/home/hoanghahcm/domains/hoanghahcm.com/public_html',
+		'CONTEXT_PREFIX' =&gt; '',
+		'DOCUMENT_ROOT' =&gt; '/home/hoanghahcm/domains/hoanghahcm.com/public_html',
+		'GATEWAY_INTERFACE' =&gt; 'CGI/1.1',
+		'HTTP_ACCEPT' =&gt; 'text/html,image/png,image/jpeg,image/pjpeg,image/x-xbitmap,image/svg+xml,image/gif;q=0.9,*/*;q=0.1',
+		'HTTP_ACCEPT_ENCODING' =&gt; 'gzip',
+		'HTTP_ACCEPT_LANGUAGE' =&gt; 'en, *',
+		'HTTP_CDN_LOOP' =&gt; 'cloudflare',
+		'HTTP_CF_CONNECTING_IP' =&gt; '59.153.220.89',
+		'HTTP_CF_IPCOUNTRY' =&gt; 'VN',
+		'HTTP_CF_RAY' =&gt; '85c9b8ea4fab84c9-HKG',
+		'HTTP_CF_VISITOR' =&gt; '{"scheme":"https"}',
+		'HTTP_CONNECTION' =&gt; 'Keep-Alive',
+		'HTTP_HOST' =&gt; 'hoanghahcm.com',
+		'HTTP_REFERER' =&gt; 'http://hoanghahcm.com/css/corporate/style.css',
+		'HTTP_USER_AGENT' =&gt; 'Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)',
+		'HTTP_X_FORWARDED_FOR' =&gt; '59.153.220.89',
+		'HTTP_X_FORWARDED_PROTO' =&gt; 'https',
+		'PATH' =&gt; '/bin:/usr/bin',
+		'PHPRC' =&gt; '/usr/local/php56/lib/',
+		'PHP_INI_SCAN_DIR' =&gt; '/usr/local/directadmin/data/users/hoanghahcm/php/',
+		'QUERY_STRING' =&gt; '',
+		'REDIRECT_PHP_INI_SCAN_DIR' =&gt; '/usr/local/directadmin/data/users/hoanghahcm/php/',
+		'REDIRECT_REDIRECT_PHP_INI_SCAN_DIR' =&gt; '/usr/local/directadmin/data/users/hoanghahcm/php/',
+		'REDIRECT_REDIRECT_STATUS' =&gt; '200',
+		'REDIRECT_REDIRECT_UNIQUE_ID' =&gt; 'Zd9SFVk9PR8mmrZ336OX-QAAAXk',
+		'REDIRECT_REDIRECT_dont_vary' =&gt; '1',
+		'REDIRECT_REDIRECT_gzip_only_text_html' =&gt; '1',
+		'REDIRECT_REDIRECT_no_gzip' =&gt; '1',
+		'REDIRECT_STATUS' =&gt; '200',
+		'REDIRECT_UNIQUE_ID' =&gt; 'Zd9SFVk9PR8mmrZ336OX-QAAAXk',
+		'REDIRECT_URL' =&gt; '/webroot/img/icons/sidebar-toggle-icons.png',
+		'REDIRECT_dont_vary' =&gt; '1',
+		'REDIRECT_gzip_only_text_html' =&gt; '1',
+		'REDIRECT_no_gzip' =&gt; '1',
+		'REMOTE_ADDR' =&gt; '162.158.114.27',
+		'REMOTE_PORT' =&gt; '31102',
+		'REQUEST_METHOD' =&gt; 'GET',
+		'REQUEST_SCHEME' =&gt; 'http',
+		'REQUEST_URI' =&gt; '/img/icons/sidebar-toggle-icons.png',
+		'SCRIPT_FILENAME' =&gt; '/home/hoanghahcm/domains/hoanghahcm.com/public_html/webroot/index.php',
+		'SCRIPT_NAME' =&gt; '/webroot/index.php',
+		'SERVER_ADDR' =&gt; '45.117.171.159',
+		'SERVER_ADMIN' =&gt; '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="c2b5a7a0afa3b1b6a7b082aaada3aca5aaa3aaa1afeca1adaf">[email&nbsp;protected]</a>',
+		'SERVER_NAME' =&gt; 'hoanghahcm.com',
+		'SERVER_PORT' =&gt; '80',
+		'SERVER_PROTOCOL' =&gt; 'HTTP/1.1',
+		'SERVER_SIGNATURE' =&gt; '',
+		'SERVER_SOFTWARE' =&gt; 'Apache/2',
+		'UNIQUE_ID' =&gt; 'Zd9SFVk9PR8mmrZ336OX-QAAAXk',
+		'gzip_only_text_html' =&gt; '1',
+		'PHP_SELF' =&gt; '/webroot/index.php',
+		'REQUEST_TIME_FLOAT' =&gt; (float) 1709134357.9456,
+		'REQUEST_TIME' =&gt; (int) 1709134357,
+		'ORIGINAL_REQUEST_METHOD' =&gt; 'GET',
+		'HTTP_X_REQUESTED_WITH' =&gt; null,
+		'HTTP_IF_NONE_MATCH' =&gt; null,
+		'HTTP_IF_MODIFIED_SINCE' =&gt; null
+	]
+	[protected] _input =&gt; null
+	[protected] _detectors =&gt; [
+		'get' =&gt; [
+			'env' =&gt; 'REQUEST_METHOD',
+			'value' =&gt; 'GET'
+		],
+		'post' =&gt; [
+			'env' =&gt; 'REQUEST_METHOD',
+			'value' =&gt; 'POST'
+		],
+		'put' =&gt; [
+			'env' =&gt; 'REQUEST_METHOD',
+			'value' =&gt; 'PUT'
+		],
+		'patch' =&gt; [
+			'env' =&gt; 'REQUEST_METHOD',
+			'value' =&gt; 'PATCH'
+		],
+		'delete' =&gt; [
+			'env' =&gt; 'REQUEST_METHOD',
+			'value' =&gt; 'DELETE'
+		],
+		'head' =&gt; [
+			'env' =&gt; 'REQUEST_METHOD',
+			'value' =&gt; 'HEAD'
+		],
+		'options' =&gt; [
+			'env' =&gt; 'REQUEST_METHOD',
+			'value' =&gt; 'OPTIONS'
+		],
+		'ssl' =&gt; [
+			'env' =&gt; 'HTTPS',
+			'options' =&gt; [
+				[maximum depth reached]
+			]
+		],
+		'ajax' =&gt; [
+			'env' =&gt; 'HTTP_X_REQUESTED_WITH',
+			'value' =&gt; 'XMLHttpRequest'
+		],
+		'flash' =&gt; [
+			'env' =&gt; 'HTTP_USER_AGENT',
+			'pattern' =&gt; '/^(Shockwave|Adobe) Flash/'
+		],
+		'requested' =&gt; [
+			'param' =&gt; 'requested',
+			'value' =&gt; (int) 1
+		],
+		'json' =&gt; [
+			'accept' =&gt; [
+				[maximum depth reached]
+			],
+			'param' =&gt; '_ext',
+			'value' =&gt; 'json'
+		],
+		'xml' =&gt; [
+			'accept' =&gt; [
+				[maximum depth reached]
+			],
+			'param' =&gt; '_ext',
+			'value' =&gt; 'xml'
+		],
+		'mobile' =&gt; object(Closure) {},
+		'tablet' =&gt; object(Closure) {}
+	]
+	[protected] _detectorCache =&gt; [
+		'ajax' =&gt; false,
+		'get' =&gt; true,
+		'head' =&gt; false,
+		'options' =&gt; false
+	]
+	[protected] stream =&gt; object(Zend\Diactoros\PhpInputStream) {
+		[protected] resource =&gt; resource
+		[protected] stream =&gt; 'php://input'
+		[private] cache =&gt; ''
+		[private] reachedEof =&gt; false
+	}
+	[protected] uri =&gt; object(Zend\Diactoros\Uri) {
+		base =&gt; ''
+		webroot =&gt; '/'
+		[protected] allowedSchemes =&gt; [
+			[maximum depth reached]
+		]
+		[private] scheme =&gt; 'https'
+		[private] userInfo =&gt; ''
+		[private] host =&gt; 'hoanghahcm.com'
+		[private] port =&gt; null
+		[private] path =&gt; '/img/icons/sidebar-toggle-icons.png'
+		[private] query =&gt; ''
+		[private] fragment =&gt; ''
+		[private] uriString =&gt; null
+	}
+	[protected] session =&gt; object(Cake\Network\Session) {
+		[protected] _engine =&gt; null
+		[protected] _started =&gt; null
+		[protected] _lifetime =&gt; '1440'
+		[protected] _isCLI =&gt; false
+	}
+	[protected] attributes =&gt; []
+	[protected] emulatedAttributes =&gt; [
+		(int) 0 =&gt; 'session',
+		(int) 1 =&gt; 'webroot',
+		(int) 2 =&gt; 'base',
+		(int) 3 =&gt; 'params'
+	]
+	[protected] uploadedFiles =&gt; []
+	[protected] protocol =&gt; null
+	[protected] requestTarget =&gt; null
+}</pre>
+</div>
+</div>
+<div id="stack-frame-1" style="display:none;" class="stack-details">
+<span class="stack-frame-file">/home/hoanghahcm/domains/hoanghahcm.com/public_html/vendor/cakephp/cakephp/src/Http/ActionDispatcher.php</span>
+<a href="#" class="toggle-link stack-frame-args" data-target="stack-args-1">toggle arguments</a>
+<table class="code-excerpt" cellspacing="0" cellpadding="0">
+<tbody><tr>
+<td class="excerpt-number" data-number="86"></td>
+<td class="excerpt-line"><code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;event&nbsp;handler&nbsp;if&nbsp;there&nbsp;is&nbsp;one.</span></span></code></td>
+</tr>
+<tr>
+<td class="excerpt-number" data-number="87"></td>
+<td class="excerpt-line"><code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">if&nbsp;(</span><span style="color: #0000BB">$beforeEvent</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getData</span><span style="color: #007700">(</span><span style="color: #DD0000">'controller'</span><span style="color: #007700">)&nbsp;instanceof&nbsp;</span><span style="color: #0000BB">Controller</span><span style="color: #007700">)&nbsp;{</span></span></code></td>
+</tr>
+<tr>
+<td class="excerpt-number" data-number="88"></td>
+<td class="excerpt-line"><code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$controller&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$beforeEvent</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getData</span><span style="color: #007700">(</span><span style="color: #DD0000">'controller'</span><span style="color: #007700">);</span></span></code></td>
+</tr>
+<tr>
+<td class="excerpt-number" data-number="89"></td>
+<td class="excerpt-line"><code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">}&nbsp;else&nbsp;{</span></span></code></td>
+</tr>
+<tr>
+<td class="excerpt-number" data-number="90"></td>
+<td class="excerpt-line"><span class="code-highlight"><code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$controller&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">factory</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">create</span><span style="color: #007700">(</span><span style="color: #0000BB">$request</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$response</span><span style="color: #007700">);</span></span></code></span></td>
+</tr>
+<tr>
+<td class="excerpt-number" data-number="91"></td>
+<td class="excerpt-line"><code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">}</span></span></code></td>
+</tr>
+<tr>
+<td class="excerpt-number" data-number="92"></td>
+<td class="excerpt-line"><code><span style="color: #000000"><span style="color: #0000BB"></span></span></code></td>
+</tr>
+<tr>
+<td class="excerpt-number" data-number="93"></td>
+<td class="excerpt-line"><code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$response&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_invoke</span><span style="color: #007700">(</span><span style="color: #0000BB">$controller</span><span style="color: #007700">);</span></span></code></td>
+</tr>
+<tr>
+<td class="excerpt-number" data-number="94"></td>
+<td class="excerpt-line"><code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">if&nbsp;(isset(</span><span style="color: #0000BB">$request</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">params</span><span style="color: #007700">[</span><span style="color: #DD0000">'return'</span><span style="color: #007700">]))&nbsp;{</span></span></code></td>
+</tr>
+</tbody></table>
+<div id="stack-args-1" style="display: none;">
+<pre>object(Cake\Http\ServerRequest) {
+	params =&gt; [
+		'controller' =&gt; 'Img',
+		'action' =&gt; 'icons',
+		'pass' =&gt; [
+			(int) 0 =&gt; 'sidebar-toggle-icons.png'
+		],
+		'plugin' =&gt; null,
+		'_matchedRoute' =&gt; '/:controller/:action/*',
+		'_ext' =&gt; null,
+		'isAjax' =&gt; false
+	]
+	data =&gt; []
+	query =&gt; []
+	cookies =&gt; []
+	url =&gt; 'img/icons/sidebar-toggle-icons.png'
+	base =&gt; ''
+	webroot =&gt; '/'
+	here =&gt; '/img/icons/sidebar-toggle-icons.png'
+	trustProxy =&gt; false
+	[protected] _environment =&gt; [
+		'CONTEXT_DOCUMENT_ROOT' =&gt; '/home/hoanghahcm/domains/hoanghahcm.com/public_html',
+		'CONTEXT_PREFIX' =&gt; '',
+		'DOCUMENT_ROOT' =&gt; '/home/hoanghahcm/domains/hoanghahcm.com/public_html',
+		'GATEWAY_INTERFACE' =&gt; 'CGI/1.1',
+		'HTTP_ACCEPT' =&gt; 'text/html,image/png,image/jpeg,image/pjpeg,image/x-xbitmap,image/svg+xml,image/gif;q=0.9,*/*;q=0.1',
+		'HTTP_ACCEPT_ENCODING' =&gt; 'gzip',
+		'HTTP_ACCEPT_LANGUAGE' =&gt; 'en, *',
+		'HTTP_CDN_LOOP' =&gt; 'cloudflare',
+		'HTTP_CF_CONNECTING_IP' =&gt; '59.153.220.89',
+		'HTTP_CF_IPCOUNTRY' =&gt; 'VN',
+		'HTTP_CF_RAY' =&gt; '85c9b8ea4fab84c9-HKG',
+		'HTTP_CF_VISITOR' =&gt; '{"scheme":"https"}',
+		'HTTP_CONNECTION' =&gt; 'Keep-Alive',
+		'HTTP_HOST' =&gt; 'hoanghahcm.com',
+		'HTTP_REFERER' =&gt; 'http://hoanghahcm.com/css/corporate/style.css',
+		'HTTP_USER_AGENT' =&gt; 'Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)',
+		'HTTP_X_FORWARDED_FOR' =&gt; '59.153.220.89',
+		'HTTP_X_FORWARDED_PROTO' =&gt; 'https',
+		'PATH' =&gt; '/bin:/usr/bin',
+		'PHPRC' =&gt; '/usr/local/php56/lib/',
+		'PHP_INI_SCAN_DIR' =&gt; '/usr/local/directadmin/data/users/hoanghahcm/php/',
+		'QUERY_STRING' =&gt; '',
+		'REDIRECT_PHP_INI_SCAN_DIR' =&gt; '/usr/local/directadmin/data/users/hoanghahcm/php/',
+		'REDIRECT_REDIRECT_PHP_INI_SCAN_DIR' =&gt; '/usr/local/directadmin/data/users/hoanghahcm/php/',
+		'REDIRECT_REDIRECT_STATUS' =&gt; '200',
+		'REDIRECT_REDIRECT_UNIQUE_ID' =&gt; 'Zd9SFVk9PR8mmrZ336OX-QAAAXk',
+		'REDIRECT_REDIRECT_dont_vary' =&gt; '1',
+		'REDIRECT_REDIRECT_gzip_only_text_html' =&gt; '1',
+		'REDIRECT_REDIRECT_no_gzip' =&gt; '1',
+		'REDIRECT_STATUS' =&gt; '200',
+		'REDIRECT_UNIQUE_ID' =&gt; 'Zd9SFVk9PR8mmrZ336OX-QAAAXk',
+		'REDIRECT_URL' =&gt; '/webroot/img/icons/sidebar-toggle-icons.png',
+		'REDIRECT_dont_vary' =&gt; '1',
+		'REDIRECT_gzip_only_text_html' =&gt; '1',
+		'REDIRECT_no_gzip' =&gt; '1',
+		'REMOTE_ADDR' =&gt; '162.158.114.27',
+		'REMOTE_PORT' =&gt; '31102',
+		'REQUEST_METHOD' =&gt; 'GET',
+		'REQUEST_SCHEME' =&gt; 'http',
+		'REQUEST_URI' =&gt; '/img/icons/sidebar-toggle-icons.png',
+		'SCRIPT_FILENAME' =&gt; '/home/hoanghahcm/domains/hoanghahcm.com/public_html/webroot/index.php',
+		'SCRIPT_NAME' =&gt; '/webroot/index.php',
+		'SERVER_ADDR' =&gt; '45.117.171.159',
+		'SERVER_ADMIN' =&gt; '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="413624232c203235243301292e202f26292029222c6f222e2c">[email&nbsp;protected]</a>',
+		'SERVER_NAME' =&gt; 'hoanghahcm.com',
+		'SERVER_PORT' =&gt; '80',
+		'SERVER_PROTOCOL' =&gt; 'HTTP/1.1',
+		'SERVER_SIGNATURE' =&gt; '',
+		'SERVER_SOFTWARE' =&gt; 'Apache/2',
+		'UNIQUE_ID' =&gt; 'Zd9SFVk9PR8mmrZ336OX-QAAAXk',
+		'gzip_only_text_html' =&gt; '1',
+		'PHP_SELF' =&gt; '/webroot/index.php',
+		'REQUEST_TIME_FLOAT' =&gt; (float) 1709134357.9456,
+		'REQUEST_TIME' =&gt; (int) 1709134357,
+		'ORIGINAL_REQUEST_METHOD' =&gt; 'GET',
+		'HTTP_X_REQUESTED_WITH' =&gt; null,
+		'HTTP_IF_NONE_MATCH' =&gt; null,
+		'HTTP_IF_MODIFIED_SINCE' =&gt; null
+	]
+	[protected] _input =&gt; null
+	[protected] _detectors =&gt; [
+		'get' =&gt; [
+			'env' =&gt; 'REQUEST_METHOD',
+			'value' =&gt; 'GET'
+		],
+		'post' =&gt; [
+			'env' =&gt; 'REQUEST_METHOD',
+			'value' =&gt; 'POST'
+		],
+		'put' =&gt; [
+			'env' =&gt; 'REQUEST_METHOD',
+			'value' =&gt; 'PUT'
+		],
+		'patch' =&gt; [
+			'env' =&gt; 'REQUEST_METHOD',
+			'value' =&gt; 'PATCH'
+		],
+		'delete' =&gt; [
+			'env' =&gt; 'REQUEST_METHOD',
+			'value' =&gt; 'DELETE'
+		],
+		'head' =&gt; [
+			'env' =&gt; 'REQUEST_METHOD',
+			'value' =&gt; 'HEAD'
+		],
+		'options' =&gt; [
+			'env' =&gt; 'REQUEST_METHOD',
+			'value' =&gt; 'OPTIONS'
+		],
+		'ssl' =&gt; [
+			'env' =&gt; 'HTTPS',
+			'options' =&gt; [
+				[maximum depth reached]
+			]
+		],
+		'ajax' =&gt; [
+			'env' =&gt; 'HTTP_X_REQUESTED_WITH',
+			'value' =&gt; 'XMLHttpRequest'
+		],
+		'flash' =&gt; [
+			'env' =&gt; 'HTTP_USER_AGENT',
+			'pattern' =&gt; '/^(Shockwave|Adobe) Flash/'
+		],
+		'requested' =&gt; [
+			'param' =&gt; 'requested',
+			'value' =&gt; (int) 1
+		],
+		'json' =&gt; [
+			'accept' =&gt; [
+				[maximum depth reached]
+			],
+			'param' =&gt; '_ext',
+			'value' =&gt; 'json'
+		],
+		'xml' =&gt; [
+			'accept' =&gt; [
+				[maximum depth reached]
+			],
+			'param' =&gt; '_ext',
+			'value' =&gt; 'xml'
+		],
+		'mobile' =&gt; object(Closure) {},
+		'tablet' =&gt; object(Closure) {}
+	]
+	[protected] _detectorCache =&gt; [
+		'ajax' =&gt; false,
+		'get' =&gt; true,
+		'head' =&gt; false,
+		'options' =&gt; false
+	]
+	[protected] stream =&gt; object(Zend\Diactoros\PhpInputStream) {
+		[protected] resource =&gt; resource
+		[protected] stream =&gt; 'php://input'
+		[private] cache =&gt; ''
+		[private] reachedEof =&gt; false
+	}
+	[protected] uri =&gt; object(Zend\Diactoros\Uri) {
+		base =&gt; ''
+		webroot =&gt; '/'
+		[protected] allowedSchemes =&gt; [
+			[maximum depth reached]
+		]
+		[private] scheme =&gt; 'https'
+		[private] userInfo =&gt; ''
+		[private] host =&gt; 'hoanghahcm.com'
+		[private] port =&gt; null
+		[private] path =&gt; '/img/icons/sidebar-toggle-icons.png'
+		[private] query =&gt; ''
+		[private] fragment =&gt; ''
+		[private] uriString =&gt; null
+	}
+	[protected] session =&gt; object(Cake\Network\Session) {
+		[protected] _engine =&gt; null
+		[protected] _started =&gt; null
+		[protected] _lifetime =&gt; '1440'
+		[protected] _isCLI =&gt; false
+	}
+	[protected] attributes =&gt; []
+	[protected] emulatedAttributes =&gt; [
+		(int) 0 =&gt; 'session',
+		(int) 1 =&gt; 'webroot',
+		(int) 2 =&gt; 'base',
+		(int) 3 =&gt; 'params'
+	]
+	[protected] uploadedFiles =&gt; []
+	[protected] protocol =&gt; null
+	[protected] requestTarget =&gt; null
+}
+object(Cake\Http\Response) {
+
+	'status' =&gt; (int) 200,
+	'contentType' =&gt; 'text/html',
+	'headers' =&gt; [
+		'Content-Type' =&gt; [
+			(int) 0 =&gt; 'text/html; charset=UTF-8'
+		]
+	],
+	'file' =&gt; null,
+	'fileRange' =&gt; [],
+	'cookies' =&gt; object(Cake\Http\Cookie\CookieCollection) {
+		[protected] cookies =&gt; [[maximum depth reached]]
+	},
+	'cacheDirectives' =&gt; [],
+	'body' =&gt; ''
+
+}</pre>
+</div>
+</div>
+<div id="stack-frame-2" style="display:none;" class="stack-details">
+<span class="stack-frame-file">/home/hoanghahcm/domains/hoanghahcm.com/public_html/vendor/cakephp/cakephp/src/Http/BaseApplication.php</span>
+<a href="#" class="toggle-link stack-frame-args" data-target="stack-args-2">toggle arguments</a>
+<table class="code-excerpt" cellspacing="0" cellpadding="0">
+<tbody><tr>
+<td class="excerpt-number" data-number="99"></td>
+<td class="excerpt-line"><code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">*&nbsp;@return&nbsp;\</span><span style="color: #0000BB">Psr</span><span style="color: #007700">\</span><span style="color: #0000BB">Http</span><span style="color: #007700">\</span><span style="color: #0000BB">Message</span><span style="color: #007700">\</span><span style="color: #0000BB">ResponseInterface</span></span></code></td>
+</tr>
+<tr>
+<td class="excerpt-number" data-number="100"></td>
+<td class="excerpt-line"><code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">*/</span></span></code></td>
+</tr>
+<tr>
+<td class="excerpt-number" data-number="101"></td>
+<td class="excerpt-line"><code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">__invoke</span><span style="color: #007700">(</span><span style="color: #0000BB">ServerRequestInterface&nbsp;$request</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">ResponseInterface&nbsp;$response</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$next</span><span style="color: #007700">)</span></span></code></td>
+</tr>
+<tr>
+<td class="excerpt-number" data-number="102"></td>
+<td class="excerpt-line"><code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">{</span></span></code></td>
+</tr>
+<tr>
+<td class="excerpt-number" data-number="103"></td>
+<td class="excerpt-line"><span class="code-highlight"><code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getDispatcher</span><span style="color: #007700">()-&gt;</span><span style="color: #0000BB">dispatch</span><span style="color: #007700">(</span><span style="color: #0000BB">$request</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$response</span><span style="color: #007700">);</span></span></code></span></td>
+</tr>
+<tr>
+<td class="excerpt-number" data-number="104"></td>
+<td class="excerpt-line"><code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">}</span></span></code></td>
+</tr>
+<tr>
+<td class="excerpt-number" data-number="105"></td>
+<td class="excerpt-line"><code><span style="color: #000000"><span style="color: #0000BB"></span></span></code></td>
+</tr>
+<tr>
+<td class="excerpt-number" data-number="106"></td>
+<td class="excerpt-line"><code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">/**</span></span></code></td>
+</tr>
+<tr>
+<td class="excerpt-number" data-number="107"></td>
+<td class="excerpt-line"><code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">*&nbsp;</span><span style="color: #0000BB">Get&nbsp;the&nbsp;ActionDispatcher</span><span style="color: #007700">.</span></span></code></td>
+</tr>
+</tbody></table>
+<div id="stack-args-2" style="display: none;">
+<pre>object(Cake\Http\ServerRequest) {
+	params =&gt; [
+		'controller' =&gt; 'Img',
+		'action' =&gt; 'icons',
+		'pass' =&gt; [
+			(int) 0 =&gt; 'sidebar-toggle-icons.png'
+		],
+		'plugin' =&gt; null,
+		'_matchedRoute' =&gt; '/:controller/:action/*',
+		'_ext' =&gt; null,
+		'isAjax' =&gt; false
+	]
+	data =&gt; []
+	query =&gt; []
+	cookies =&gt; []
+	url =&gt; 'img/icons/sidebar-toggle-icons.png'
+	base =&gt; ''
+	webroot =&gt; '/'
+	here =&gt; '/img/icons/sidebar-toggle-icons.png'
+	trustProxy =&gt; false
+	[protected] _environment =&gt; [
+		'CONTEXT_DOCUMENT_ROOT' =&gt; '/home/hoanghahcm/domains/hoanghahcm.com/public_html',
+		'CONTEXT_PREFIX' =&gt; '',
+		'DOCUMENT_ROOT' =&gt; '/home/hoanghahcm/domains/hoanghahcm.com/public_html',
+		'GATEWAY_INTERFACE' =&gt; 'CGI/1.1',
+		'HTTP_ACCEPT' =&gt; 'text/html,image/png,image/jpeg,image/pjpeg,image/x-xbitmap,image/svg+xml,image/gif;q=0.9,*/*;q=0.1',
+		'HTTP_ACCEPT_ENCODING' =&gt; 'gzip',
+		'HTTP_ACCEPT_LANGUAGE' =&gt; 'en, *',
+		'HTTP_CDN_LOOP' =&gt; 'cloudflare',
+		'HTTP_CF_CONNECTING_IP' =&gt; '59.153.220.89',
+		'HTTP_CF_IPCOUNTRY' =&gt; 'VN',
+		'HTTP_CF_RAY' =&gt; '85c9b8ea4fab84c9-HKG',
+		'HTTP_CF_VISITOR' =&gt; '{"scheme":"https"}',
+		'HTTP_CONNECTION' =&gt; 'Keep-Alive',
+		'HTTP_HOST' =&gt; 'hoanghahcm.com',
+		'HTTP_REFERER' =&gt; 'http://hoanghahcm.com/css/corporate/style.css',
+		'HTTP_USER_AGENT' =&gt; 'Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)',
+		'HTTP_X_FORWARDED_FOR' =&gt; '59.153.220.89',
+		'HTTP_X_FORWARDED_PROTO' =&gt; 'https',
+		'PATH' =&gt; '/bin:/usr/bin',
+		'PHPRC' =&gt; '/usr/local/php56/lib/',
+		'PHP_INI_SCAN_DIR' =&gt; '/usr/local/directadmin/data/users/hoanghahcm/php/',
+		'QUERY_STRING' =&gt; '',
+		'REDIRECT_PHP_INI_SCAN_DIR' =&gt; '/usr/local/directadmin/data/users/hoanghahcm/php/',
+		'REDIRECT_REDIRECT_PHP_INI_SCAN_DIR' =&gt; '/usr/local/directadmin/data/users/hoanghahcm/php/',
+		'REDIRECT_REDIRECT_STATUS' =&gt; '200',
+		'REDIRECT_REDIRECT_UNIQUE_ID' =&gt; 'Zd9SFVk9PR8mmrZ336OX-QAAAXk',
+		'REDIRECT_REDIRECT_dont_vary' =&gt; '1',
+		'REDIRECT_REDIRECT_gzip_only_text_html' =&gt; '1',
+		'REDIRECT_REDIRECT_no_gzip' =&gt; '1',
+		'REDIRECT_STATUS' =&gt; '200',
+		'REDIRECT_UNIQUE_ID' =&gt; 'Zd9SFVk9PR8mmrZ336OX-QAAAXk',
+		'REDIRECT_URL' =&gt; '/webroot/img/icons/sidebar-toggle-icons.png',
+		'REDIRECT_dont_vary' =&gt; '1',
+		'REDIRECT_gzip_only_text_html' =&gt; '1',
+		'REDIRECT_no_gzip' =&gt; '1',
+		'REMOTE_ADDR' =&gt; '162.158.114.27',
+		'REMOTE_PORT' =&gt; '31102',
+		'REQUEST_METHOD' =&gt; 'GET',
+		'REQUEST_SCHEME' =&gt; 'http',
+		'REQUEST_URI' =&gt; '/img/icons/sidebar-toggle-icons.png',
+		'SCRIPT_FILENAME' =&gt; '/home/hoanghahcm/domains/hoanghahcm.com/public_html/webroot/index.php',
+		'SCRIPT_NAME' =&gt; '/webroot/index.php',
+		'SERVER_ADDR' =&gt; '45.117.171.159',
+		'SERVER_ADMIN' =&gt; '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="493e2c2b24283a3d2c3b09212628272e2128212a24672a2624">[email&nbsp;protected]</a>',
+		'SERVER_NAME' =&gt; 'hoanghahcm.com',
+		'SERVER_PORT' =&gt; '80',
+		'SERVER_PROTOCOL' =&gt; 'HTTP/1.1',
+		'SERVER_SIGNATURE' =&gt; '',
+		'SERVER_SOFTWARE' =&gt; 'Apache/2',
+		'UNIQUE_ID' =&gt; 'Zd9SFVk9PR8mmrZ336OX-QAAAXk',
+		'gzip_only_text_html' =&gt; '1',
+		'PHP_SELF' =&gt; '/webroot/index.php',
+		'REQUEST_TIME_FLOAT' =&gt; (float) 1709134357.9456,
+		'REQUEST_TIME' =&gt; (int) 1709134357,
+		'ORIGINAL_REQUEST_METHOD' =&gt; 'GET',
+		'HTTP_X_REQUESTED_WITH' =&gt; null,
+		'HTTP_IF_NONE_MATCH' =&gt; null,
+		'HTTP_IF_MODIFIED_SINCE' =&gt; null
+	]
+	[protected] _input =&gt; null
+	[protected] _detectors =&gt; [
+		'get' =&gt; [
+			'env' =&gt; 'REQUEST_METHOD',
+			'value' =&gt; 'GET'
+		],
+		'post' =&gt; [
+			'env' =&gt; 'REQUEST_METHOD',
+			'value' =&gt; 'POST'
+		],
+		'put' =&gt; [
+			'env' =&gt; 'REQUEST_METHOD',
+			'value' =&gt; 'PUT'
+		],
+		'patch' =&gt; [
+			'env' =&gt; 'REQUEST_METHOD',
+			'value' =&gt; 'PATCH'
+		],
+		'delete' =&gt; [
+			'env' =&gt; 'REQUEST_METHOD',
+			'value' =&gt; 'DELETE'
+		],
+		'head' =&gt; [
+			'env' =&gt; 'REQUEST_METHOD',
+			'value' =&gt; 'HEAD'
+		],
+		'options' =&gt; [
+			'env' =&gt; 'REQUEST_METHOD',
+			'value' =&gt; 'OPTIONS'
+		],
+		'ssl' =&gt; [
+			'env' =&gt; 'HTTPS',
+			'options' =&gt; [
+				[maximum depth reached]
+			]
+		],
+		'ajax' =&gt; [
+			'env' =&gt; 'HTTP_X_REQUESTED_WITH',
+			'value' =&gt; 'XMLHttpRequest'
+		],
+		'flash' =&gt; [
+			'env' =&gt; 'HTTP_USER_AGENT',
+			'pattern' =&gt; '/^(Shockwave|Adobe) Flash/'
+		],
+		'requested' =&gt; [
+			'param' =&gt; 'requested',
+			'value' =&gt; (int) 1
+		],
+		'json' =&gt; [
+			'accept' =&gt; [
+				[maximum depth reached]
+			],
+			'param' =&gt; '_ext',
+			'value' =&gt; 'json'
+		],
+		'xml' =&gt; [
+			'accept' =&gt; [
+				[maximum depth reached]
+			],
+			'param' =&gt; '_ext',
+			'value' =&gt; 'xml'
+		],
+		'mobile' =&gt; object(Closure) {},
+		'tablet' =&gt; object(Closure) {}
+	]
+	[protected] _detectorCache =&gt; [
+		'ajax' =&gt; false,
+		'get' =&gt; true,
+		'head' =&gt; false,
+		'options' =&gt; false
+	]
+	[protected] stream =&gt; object(Zend\Diactoros\PhpInputStream) {
+		[protected] resource =&gt; resource
+		[protected] stream =&gt; 'php://input'
+		[private] cache =&gt; ''
+		[private] reachedEof =&gt; false
+	}
+	[protected] uri =&gt; object(Zend\Diactoros\Uri) {
+		base =&gt; ''
+		webroot =&gt; '/'
+		[protected] allowedSchemes =&gt; [
+			[maximum depth reached]
+		]
+		[private] scheme =&gt; 'https'
+		[private] userInfo =&gt; ''
+		[private] host =&gt; 'hoanghahcm.com'
+		[private] port =&gt; null
+		[private] path =&gt; '/img/icons/sidebar-toggle-icons.png'
+		[private] query =&gt; ''
+		[private] fragment =&gt; ''
+		[private] uriString =&gt; null
+	}
+	[protected] session =&gt; object(Cake\Network\Session) {
+		[protected] _engine =&gt; null
+		[protected] _started =&gt; null
+		[protected] _lifetime =&gt; '1440'
+		[protected] _isCLI =&gt; false
+	}
+	[protected] attributes =&gt; []
+	[protected] emulatedAttributes =&gt; [
+		(int) 0 =&gt; 'session',
+		(int) 1 =&gt; 'webroot',
+		(int) 2 =&gt; 'base',
+		(int) 3 =&gt; 'params'
+	]
+	[protected] uploadedFiles =&gt; []
+	[protected] protocol =&gt; null
+	[protected] requestTarget =&gt; null
+}
+object(Cake\Http\Response) {
+
+	'status' =&gt; (int) 200,
+	'contentType' =&gt; 'text/html',
+	'headers' =&gt; [
+		'Content-Type' =&gt; [
+			(int) 0 =&gt; 'text/html; charset=UTF-8'
+		]
+	],
+	'file' =&gt; null,
+	'fileRange' =&gt; [],
+	'cookies' =&gt; object(Cake\Http\Cookie\CookieCollection) {
+		[protected] cookies =&gt; [[maximum depth reached]]
+	},
+	'cacheDirectives' =&gt; [],
+	'body' =&gt; ''
+
+}</pre>
+</div>
+</div>
+<div id="stack-frame-3" style="display:none;" class="stack-details">
+<span class="stack-frame-file">/home/hoanghahcm/domains/hoanghahcm.com/public_html/vendor/cakephp/cakephp/src/Http/Runner.php</span>
+<a href="#" class="toggle-link stack-frame-args" data-target="stack-args-3">toggle arguments</a>
+<table class="code-excerpt" cellspacing="0" cellpadding="0">
+<tbody><tr>
+<td class="excerpt-number" data-number="60"></td>
+<td class="excerpt-line"><code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">{</span></span></code></td>
+</tr>
+<tr>
+<td class="excerpt-number" data-number="61"></td>
+<td class="excerpt-line"><code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$next&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">middleware</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">get</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">index</span><span style="color: #007700">);</span></span></code></td>
+</tr>
+<tr>
+<td class="excerpt-number" data-number="62"></td>
+<td class="excerpt-line"><code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">if&nbsp;(</span><span style="color: #0000BB">$next</span><span style="color: #007700">)&nbsp;{</span></span></code></td>
+</tr>
+<tr>
+<td class="excerpt-number" data-number="63"></td>
+<td class="excerpt-line"><code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">index</span><span style="color: #007700">++;</span></span></code></td>
+</tr>
+<tr>
+<td class="excerpt-number" data-number="64"></td>
+<td class="excerpt-line"><span class="code-highlight"><code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">return&nbsp;</span><span style="color: #0000BB">$next</span><span style="color: #007700">(</span><span style="color: #0000BB">$request</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$response</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">);</span></span></code></span></td>
+</tr>
+<tr>
+<td class="excerpt-number" data-number="65"></td>
+<td class="excerpt-line"><code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">}</span></span></code></td>
+</tr>
+<tr>
+<td class="excerpt-number" data-number="66"></td>
+<td class="excerpt-line"><code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;End&nbsp;of&nbsp;the&nbsp;queue</span></span></code></td>
+</tr>
+<tr>
+<td class="excerpt-number" data-number="67"></td>
+<td class="excerpt-line"><code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">return&nbsp;</span><span style="color: #0000BB">$response</span><span style="color: #007700">;</span></span></code></td>
+</tr>
+<tr>
+<td class="excerpt-number" data-number="68"></td>
+<td class="excerpt-line"><code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">}</span></span></code></td>
+</tr>
+</tbody></table>
+<div id="stack-args-3" style="display: none;">
+<pre>object(Cake\Http\ServerRequest) {
+	params =&gt; [
+		'controller' =&gt; 'Img',
+		'action' =&gt; 'icons',
+		'pass' =&gt; [
+			(int) 0 =&gt; 'sidebar-toggle-icons.png'
+		],
+		'plugin' =&gt; null,
+		'_matchedRoute' =&gt; '/:controller/:action/*',
+		'_ext' =&gt; null,
+		'isAjax' =&gt; false
+	]
+	data =&gt; []
+	query =&gt; []
+	cookies =&gt; []
+	url =&gt; 'img/icons/sidebar-toggle-icons.png'
+	base =&gt; ''
+	webroot =&gt; '/'
+	here =&gt; '/img/icons/sidebar-toggle-icons.png'
+	trustProxy =&gt; false
+	[protected] _environment =&gt; [
+		'CONTEXT_DOCUMENT_ROOT' =&gt; '/home/hoanghahcm/domains/hoanghahcm.com/public_html',
+		'CONTEXT_PREFIX' =&gt; '',
+		'DOCUMENT_ROOT' =&gt; '/home/hoanghahcm/domains/hoanghahcm.com/public_html',
+		'GATEWAY_INTERFACE' =&gt; 'CGI/1.1',
+		'HTTP_ACCEPT' =&gt; 'text/html,image/png,image/jpeg,image/pjpeg,image/x-xbitmap,image/svg+xml,image/gif;q=0.9,*/*;q=0.1',
+		'HTTP_ACCEPT_ENCODING' =&gt; 'gzip',
+		'HTTP_ACCEPT_LANGUAGE' =&gt; 'en, *',
+		'HTTP_CDN_LOOP' =&gt; 'cloudflare',
+		'HTTP_CF_CONNECTING_IP' =&gt; '59.153.220.89',
+		'HTTP_CF_IPCOUNTRY' =&gt; 'VN',
+		'HTTP_CF_RAY' =&gt; '85c9b8ea4fab84c9-HKG',
+		'HTTP_CF_VISITOR' =&gt; '{"scheme":"https"}',
+		'HTTP_CONNECTION' =&gt; 'Keep-Alive',
+		'HTTP_HOST' =&gt; 'hoanghahcm.com',
+		'HTTP_REFERER' =&gt; 'http://hoanghahcm.com/css/corporate/style.css',
+		'HTTP_USER_AGENT' =&gt; 'Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)',
+		'HTTP_X_FORWARDED_FOR' =&gt; '59.153.220.89',
+		'HTTP_X_FORWARDED_PROTO' =&gt; 'https',
+		'PATH' =&gt; '/bin:/usr/bin',
+		'PHPRC' =&gt; '/usr/local/php56/lib/',
+		'PHP_INI_SCAN_DIR' =&gt; '/usr/local/directadmin/data/users/hoanghahcm/php/',
+		'QUERY_STRING' =&gt; '',
+		'REDIRECT_PHP_INI_SCAN_DIR' =&gt; '/usr/local/directadmin/data/users/hoanghahcm/php/',
+		'REDIRECT_REDIRECT_PHP_INI_SCAN_DIR' =&gt; '/usr/local/directadmin/data/users/hoanghahcm/php/',
+		'REDIRECT_REDIRECT_STATUS' =&gt; '200',
+		'REDIRECT_REDIRECT_UNIQUE_ID' =&gt; 'Zd9SFVk9PR8mmrZ336OX-QAAAXk',
+		'REDIRECT_REDIRECT_dont_vary' =&gt; '1',
+		'REDIRECT_REDIRECT_gzip_only_text_html' =&gt; '1',
+		'REDIRECT_REDIRECT_no_gzip' =&gt; '1',
+		'REDIRECT_STATUS' =&gt; '200',
+		'REDIRECT_UNIQUE_ID' =&gt; 'Zd9SFVk9PR8mmrZ336OX-QAAAXk',
+		'REDIRECT_URL' =&gt; '/webroot/img/icons/sidebar-toggle-icons.png',
+		'REDIRECT_dont_vary' =&gt; '1',
+		'REDIRECT_gzip_only_text_html' =&gt; '1',
+		'REDIRECT_no_gzip' =&gt; '1',
+		'REMOTE_ADDR' =&gt; '162.158.114.27',
+		'REMOTE_PORT' =&gt; '31102',
+		'REQUEST_METHOD' =&gt; 'GET',
+		'REQUEST_SCHEME' =&gt; 'http',
+		'REQUEST_URI' =&gt; '/img/icons/sidebar-toggle-icons.png',
+		'SCRIPT_FILENAME' =&gt; '/home/hoanghahcm/domains/hoanghahcm.com/public_html/webroot/index.php',
+		'SCRIPT_NAME' =&gt; '/webroot/index.php',
+		'SERVER_ADDR' =&gt; '45.117.171.159',
+		'SERVER_ADMIN' =&gt; '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="8dfae8efe0ecfef9e8ffcde5e2ece3eae5ece5eee0a3eee2e0">[email&nbsp;protected]</a>',
+		'SERVER_NAME' =&gt; 'hoanghahcm.com',
+		'SERVER_PORT' =&gt; '80',
+		'SERVER_PROTOCOL' =&gt; 'HTTP/1.1',
+		'SERVER_SIGNATURE' =&gt; '',
+		'SERVER_SOFTWARE' =&gt; 'Apache/2',
+		'UNIQUE_ID' =&gt; 'Zd9SFVk9PR8mmrZ336OX-QAAAXk',
+		'gzip_only_text_html' =&gt; '1',
+		'PHP_SELF' =&gt; '/webroot/index.php',
+		'REQUEST_TIME_FLOAT' =&gt; (float) 1709134357.9456,
+		'REQUEST_TIME' =&gt; (int) 1709134357,
+		'ORIGINAL_REQUEST_METHOD' =&gt; 'GET',
+		'HTTP_X_REQUESTED_WITH' =&gt; null,
+		'HTTP_IF_NONE_MATCH' =&gt; null,
+		'HTTP_IF_MODIFIED_SINCE' =&gt; null
+	]
+	[protected] _input =&gt; null
+	[protected] _detectors =&gt; [
+		'get' =&gt; [
+			'env' =&gt; 'REQUEST_METHOD',
+			'value' =&gt; 'GET'
+		],
+		'post' =&gt; [
+			'env' =&gt; 'REQUEST_METHOD',
+			'value' =&gt; 'POST'
+		],
+		'put' =&gt; [
+			'env' =&gt; 'REQUEST_METHOD',
+			'value' =&gt; 'PUT'
+		],
+		'patch' =&gt; [
+			'env' =&gt; 'REQUEST_METHOD',
+			'value' =&gt; 'PATCH'
+		],
+		'delete' =&gt; [
+			'env' =&gt; 'REQUEST_METHOD',
+			'value' =&gt; 'DELETE'
+		],
+		'head' =&gt; [
+			'env' =&gt; 'REQUEST_METHOD',
+			'value' =&gt; 'HEAD'
+		],
+		'options' =&gt; [
+			'env' =&gt; 'REQUEST_METHOD',
+			'value' =&gt; 'OPTIONS'
+		],
+		'ssl' =&gt; [
+			'env' =&gt; 'HTTPS',
+			'options' =&gt; [
+				[maximum depth reached]
+			]
+		],
+		'ajax' =&gt; [
+			'env' =&gt; 'HTTP_X_REQUESTED_WITH',
+			'value' =&gt; 'XMLHttpRequest'
+		],
+		'flash' =&gt; [
+			'env' =&gt; 'HTTP_USER_AGENT',
+			'pattern' =&gt; '/^(Shockwave|Adobe) Flash/'
+		],
+		'requested' =&gt; [
+			'param' =&gt; 'requested',
+			'value' =&gt; (int) 1
+		],
+		'json' =&gt; [
+			'accept' =&gt; [
+				[maximum depth reached]
+			],
+			'param' =&gt; '_ext',
+			'value' =&gt; 'json'
+		],
+		'xml' =&gt; [
+			'accept' =&gt; [
+				[maximum depth reached]
+			],
+			'param' =&gt; '_ext',
+			'value' =&gt; 'xml'
+		],
+		'mobile' =&gt; object(Closure) {},
+		'tablet' =&gt; object(Closure) {}
+	]
+	[protected] _detectorCache =&gt; [
+		'ajax' =&gt; false,
+		'get' =&gt; true,
+		'head' =&gt; false,
+		'options' =&gt; false
+	]
+	[protected] stream =&gt; object(Zend\Diactoros\PhpInputStream) {
+		[protected] resource =&gt; resource
+		[protected] stream =&gt; 'php://input'
+		[private] cache =&gt; ''
+		[private] reachedEof =&gt; false
+	}
+	[protected] uri =&gt; object(Zend\Diactoros\Uri) {
+		base =&gt; ''
+		webroot =&gt; '/'
+		[protected] allowedSchemes =&gt; [
+			[maximum depth reached]
+		]
+		[private] scheme =&gt; 'https'
+		[private] userInfo =&gt; ''
+		[private] host =&gt; 'hoanghahcm.com'
+		[private] port =&gt; null
+		[private] path =&gt; '/img/icons/sidebar-toggle-icons.png'
+		[private] query =&gt; ''
+		[private] fragment =&gt; ''
+		[private] uriString =&gt; null
+	}
+	[protected] session =&gt; object(Cake\Network\Session) {
+		[protected] _engine =&gt; null
+		[protected] _started =&gt; null
+		[protected] _lifetime =&gt; '1440'
+		[protected] _isCLI =&gt; false
+	}
+	[protected] attributes =&gt; []
+	[protected] emulatedAttributes =&gt; [
+		(int) 0 =&gt; 'session',
+		(int) 1 =&gt; 'webroot',
+		(int) 2 =&gt; 'base',
+		(int) 3 =&gt; 'params'
+	]
+	[protected] uploadedFiles =&gt; []
+	[protected] protocol =&gt; null
+	[protected] requestTarget =&gt; null
+}
+object(Cake\Http\Response) {
+
+	'status' =&gt; (int) 200,
+	'contentType' =&gt; 'text/html',
+	'headers' =&gt; [
+		'Content-Type' =&gt; [
+			(int) 0 =&gt; 'text/html; charset=UTF-8'
+		]
+	],
+	'file' =&gt; null,
+	'fileRange' =&gt; [],
+	'cookies' =&gt; object(Cake\Http\Cookie\CookieCollection) {
+		[protected] cookies =&gt; [[maximum depth reached]]
+	},
+	'cacheDirectives' =&gt; [],
+	'body' =&gt; ''
+
+}
+object(Cake\Http\Runner) {
+	[protected] index =&gt; (int) 4
+	[protected] middleware =&gt; object(Cake\Http\MiddlewareQueue) {
+		[protected] queue =&gt; [
+			[maximum depth reached]
+		]
+		[protected] callables =&gt; [
+			[maximum depth reached]
+		]
+	}
+}</pre>
+</div>
+</div>
+<div id="stack-frame-4" style="display:none;" class="stack-details">
+<span class="stack-frame-file">/home/hoanghahcm/domains/hoanghahcm.com/public_html/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php</span>
+<a href="#" class="toggle-link stack-frame-args" data-target="stack-args-4">toggle arguments</a>
+<table class="code-excerpt" cellspacing="0" cellpadding="0">
+<tbody><tr>
+<td class="excerpt-number" data-number="103"></td>
+<td class="excerpt-line"><code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">);</span></span></code></td>
+</tr>
+<tr>
+<td class="excerpt-number" data-number="104"></td>
+<td class="excerpt-line"><code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">}</span></span></code></td>
+</tr>
+<tr>
+<td class="excerpt-number" data-number="105"></td>
+<td class="excerpt-line"><code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$matching&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">Router</span><span style="color: #007700">::</span><span style="color: #0000BB">getRouteCollection</span><span style="color: #007700">()-&gt;</span><span style="color: #0000BB">getMiddleware</span><span style="color: #007700">(</span><span style="color: #0000BB">$middleware</span><span style="color: #007700">);</span></span></code></td>
+</tr>
+<tr>
+<td class="excerpt-number" data-number="106"></td>
+<td class="excerpt-line"><code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">if&nbsp;(!</span><span style="color: #0000BB">$matching</span><span style="color: #007700">)&nbsp;{</span></span></code></td>
+</tr>
+<tr>
+<td class="excerpt-number" data-number="107"></td>
+<td class="excerpt-line"><span class="code-highlight"><code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">return&nbsp;</span><span style="color: #0000BB">$next</span><span style="color: #007700">(</span><span style="color: #0000BB">$request</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$response</span><span style="color: #007700">);</span></span></code></span></td>
+</tr>
+<tr>
+<td class="excerpt-number" data-number="108"></td>
+<td class="excerpt-line"><code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">}</span></span></code></td>
+</tr>
+<tr>
+<td class="excerpt-number" data-number="109"></td>
+<td class="excerpt-line"><code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$matching</span><span style="color: #007700">[]&nbsp;=&nbsp;</span><span style="color: #0000BB">$next</span><span style="color: #007700">;</span></span></code></td>
+</tr>
+<tr>
+<td class="excerpt-number" data-number="110"></td>
+<td class="excerpt-line"><code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$middleware&nbsp;</span><span style="color: #007700">=&nbsp;new&nbsp;</span><span style="color: #0000BB">MiddlewareQueue</span><span style="color: #007700">(</span><span style="color: #0000BB">$matching</span><span style="color: #007700">);</span></span></code></td>
+</tr>
+<tr>
+<td class="excerpt-number" data-number="111"></td>
+<td class="excerpt-line"><code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$runner&nbsp;</span><span style="color: #007700">=&nbsp;new&nbsp;</span><span style="color: #0000BB">Runner</span><span style="color: #007700">();</span></span></code></td>
+</tr>
+</tbody></table>
+<div id="stack-args-4" style="display: none;">
+<pre>object(Cake\Http\ServerRequest) {
+	params =&gt; [
+		'controller' =&gt; 'Img',
+		'action' =&gt; 'icons',
+		'pass' =&gt; [
+			(int) 0 =&gt; 'sidebar-toggle-icons.png'
+		],
+		'plugin' =&gt; null,
+		'_matchedRoute' =&gt; '/:controller/:action/*',
+		'_ext' =&gt; null,
+		'isAjax' =&gt; false
+	]
+	data =&gt; []
+	query =&gt; []
+	cookies =&gt; []
+	url =&gt; 'img/icons/sidebar-toggle-icons.png'
+	base =&gt; ''
+	webroot =&gt; '/'
+	here =&gt; '/img/icons/sidebar-toggle-icons.png'
+	trustProxy =&gt; false
+	[protected] _environment =&gt; [
+		'CONTEXT_DOCUMENT_ROOT' =&gt; '/home/hoanghahcm/domains/hoanghahcm.com/public_html',
+		'CONTEXT_PREFIX' =&gt; '',
+		'DOCUMENT_ROOT' =&gt; '/home/hoanghahcm/domains/hoanghahcm.com/public_html',
+		'GATEWAY_INTERFACE' =&gt; 'CGI/1.1',
+		'HTTP_ACCEPT' =&gt; 'text/html,image/png,image/jpeg,image/pjpeg,image/x-xbitmap,image/svg+xml,image/gif;q=0.9,*/*;q=0.1',
+		'HTTP_ACCEPT_ENCODING' =&gt; 'gzip',
+		'HTTP_ACCEPT_LANGUAGE' =&gt; 'en, *',
+		'HTTP_CDN_LOOP' =&gt; 'cloudflare',
+		'HTTP_CF_CONNECTING_IP' =&gt; '59.153.220.89',
+		'HTTP_CF_IPCOUNTRY' =&gt; 'VN',
+		'HTTP_CF_RAY' =&gt; '85c9b8ea4fab84c9-HKG',
+		'HTTP_CF_VISITOR' =&gt; '{"scheme":"https"}',
+		'HTTP_CONNECTION' =&gt; 'Keep-Alive',
+		'HTTP_HOST' =&gt; 'hoanghahcm.com',
+		'HTTP_REFERER' =&gt; 'http://hoanghahcm.com/css/corporate/style.css',
+		'HTTP_USER_AGENT' =&gt; 'Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)',
+		'HTTP_X_FORWARDED_FOR' =&gt; '59.153.220.89',
+		'HTTP_X_FORWARDED_PROTO' =&gt; 'https',
+		'PATH' =&gt; '/bin:/usr/bin',
+		'PHPRC' =&gt; '/usr/local/php56/lib/',
+		'PHP_INI_SCAN_DIR' =&gt; '/usr/local/directadmin/data/users/hoanghahcm/php/',
+		'QUERY_STRING' =&gt; '',
+		'REDIRECT_PHP_INI_SCAN_DIR' =&gt; '/usr/local/directadmin/data/users/hoanghahcm/php/',
+		'REDIRECT_REDIRECT_PHP_INI_SCAN_DIR' =&gt; '/usr/local/directadmin/data/users/hoanghahcm/php/',
+		'REDIRECT_REDIRECT_STATUS' =&gt; '200',
+		'REDIRECT_REDIRECT_UNIQUE_ID' =&gt; 'Zd9SFVk9PR8mmrZ336OX-QAAAXk',
+		'REDIRECT_REDIRECT_dont_vary' =&gt; '1',
+		'REDIRECT_REDIRECT_gzip_only_text_html' =&gt; '1',
+		'REDIRECT_REDIRECT_no_gzip' =&gt; '1',
+		'REDIRECT_STATUS' =&gt; '200',
+		'REDIRECT_UNIQUE_ID' =&gt; 'Zd9SFVk9PR8mmrZ336OX-QAAAXk',
+		'REDIRECT_URL' =&gt; '/webroot/img/icons/sidebar-toggle-icons.png',
+		'REDIRECT_dont_vary' =&gt; '1',
+		'REDIRECT_gzip_only_text_html' =&gt; '1',
+		'REDIRECT_no_gzip' =&gt; '1',
+		'REMOTE_ADDR' =&gt; '162.158.114.27',
+		'REMOTE_PORT' =&gt; '31102',
+		'REQUEST_METHOD' =&gt; 'GET',
+		'REQUEST_SCHEME' =&gt; 'http',
+		'REQUEST_URI' =&gt; '/img/icons/sidebar-toggle-icons.png',
+		'SCRIPT_FILENAME' =&gt; '/home/hoanghahcm/domains/hoanghahcm.com/public_html/webroot/index.php',
+		'SCRIPT_NAME' =&gt; '/webroot/index.php',
+		'SERVER_ADDR' =&gt; '45.117.171.159',
+		'SERVER_ADMIN' =&gt; '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="384f5d5a55594b4c5d4a78505759565f5059505b55165b5755">[email&nbsp;protected]</a>',
+		'SERVER_NAME' =&gt; 'hoanghahcm.com',
+		'SERVER_PORT' =&gt; '80',
+		'SERVER_PROTOCOL' =&gt; 'HTTP/1.1',
+		'SERVER_SIGNATURE' =&gt; '',
+		'SERVER_SOFTWARE' =&gt; 'Apache/2',
+		'UNIQUE_ID' =&gt; 'Zd9SFVk9PR8mmrZ336OX-QAAAXk',
+		'gzip_only_text_html' =&gt; '1',
+		'PHP_SELF' =&gt; '/webroot/index.php',
+		'REQUEST_TIME_FLOAT' =&gt; (float) 1709134357.9456,
+		'REQUEST_TIME' =&gt; (int) 1709134357,
+		'ORIGINAL_REQUEST_METHOD' =&gt; 'GET',
+		'HTTP_X_REQUESTED_WITH' =&gt; null,
+		'HTTP_IF_NONE_MATCH' =&gt; null,
+		'HTTP_IF_MODIFIED_SINCE' =&gt; null
+	]
+	[protected] _input =&gt; null
+	[protected] _detectors =&gt; [
+		'get' =&gt; [
+			'env' =&gt; 'REQUEST_METHOD',
+			'value' =&gt; 'GET'
+		],
+		'post' =&gt; [
+			'env' =&gt; 'REQUEST_METHOD',
+			'value' =&gt; 'POST'
+		],
+		'put' =&gt; [
+			'env' =&gt; 'REQUEST_METHOD',
+			'value' =&gt; 'PUT'
+		],
+		'patch' =&gt; [
+			'env' =&gt; 'REQUEST_METHOD',
+			'value' =&gt; 'PATCH'
+		],
+		'delete' =&gt; [
+			'env' =&gt; 'REQUEST_METHOD',
+			'value' =&gt; 'DELETE'
+		],
+		'head' =&gt; [
+			'env' =&gt; 'REQUEST_METHOD',
+			'value' =&gt; 'HEAD'
+		],
+		'options' =&gt; [
+			'env' =&gt; 'REQUEST_METHOD',
+			'value' =&gt; 'OPTIONS'
+		],
+		'ssl' =&gt; [
+			'env' =&gt; 'HTTPS',
+			'options' =&gt; [
+				[maximum depth reached]
+			]
+		],
+		'ajax' =&gt; [
+			'env' =&gt; 'HTTP_X_REQUESTED_WITH',
+			'value' =&gt; 'XMLHttpRequest'
+		],
+		'flash' =&gt; [
+			'env' =&gt; 'HTTP_USER_AGENT',
+			'pattern' =&gt; '/^(Shockwave|Adobe) Flash/'
+		],
+		'requested' =&gt; [
+			'param' =&gt; 'requested',
+			'value' =&gt; (int) 1
+		],
+		'json' =&gt; [
+			'accept' =&gt; [
+				[maximum depth reached]
+			],
+			'param' =&gt; '_ext',
+			'value' =&gt; 'json'
+		],
+		'xml' =&gt; [
+			'accept' =&gt; [
+				[maximum depth reached]
+			],
+			'param' =&gt; '_ext',
+			'value' =&gt; 'xml'
+		],
+		'mobile' =&gt; object(Closure) {},
+		'tablet' =&gt; object(Closure) {}
+	]
+	[protected] _detectorCache =&gt; [
+		'ajax' =&gt; false,
+		'get' =&gt; true,
+		'head' =&gt; false,
+		'options' =&gt; false
+	]
+	[protected] stream =&gt; object(Zend\Diactoros\PhpInputStream) {
+		[protected] resource =&gt; resource
+		[protected] stream =&gt; 'php://input'
+		[private] cache =&gt; ''
+		[private] reachedEof =&gt; false
+	}
+	[protected] uri =&gt; object(Zend\Diactoros\Uri) {
+		base =&gt; ''
+		webroot =&gt; '/'
+		[protected] allowedSchemes =&gt; [
+			[maximum depth reached]
+		]
+		[private] scheme =&gt; 'https'
+		[private] userInfo =&gt; ''
+		[private] host =&gt; 'hoanghahcm.com'
+		[private] port =&gt; null
+		[private] path =&gt; '/img/icons/sidebar-toggle-icons.png'
+		[private] query =&gt; ''
+		[private] fragment =&gt; ''
+		[private] uriString =&gt; null
+	}
+	[protected] session =&gt; object(Cake\Network\Session) {
+		[protected] _engine =&gt; null
+		[protected] _started =&gt; null
+		[protected] _lifetime =&gt; '1440'
+		[protected] _isCLI =&gt; false
+	}
+	[protected] attributes =&gt; []
+	[protected] emulatedAttributes =&gt; [
+		(int) 0 =&gt; 'session',
+		(int) 1 =&gt; 'webroot',
+		(int) 2 =&gt; 'base',
+		(int) 3 =&gt; 'params'
+	]
+	[protected] uploadedFiles =&gt; []
+	[protected] protocol =&gt; null
+	[protected] requestTarget =&gt; null
+}
+object(Cake\Http\Response) {
+
+	'status' =&gt; (int) 200,
+	'contentType' =&gt; 'text/html',
+	'headers' =&gt; [
+		'Content-Type' =&gt; [
+			(int) 0 =&gt; 'text/html; charset=UTF-8'
+		]
+	],
+	'file' =&gt; null,
+	'fileRange' =&gt; [],
+	'cookies' =&gt; object(Cake\Http\Cookie\CookieCollection) {
+		[protected] cookies =&gt; [[maximum depth reached]]
+	},
+	'cacheDirectives' =&gt; [],
+	'body' =&gt; ''
+
+}</pre>
+</div>
+</div>
+<div id="stack-frame-5" style="display:none;" class="stack-details">
+<span class="stack-frame-file">/home/hoanghahcm/domains/hoanghahcm.com/public_html/vendor/cakephp/cakephp/src/Http/Runner.php</span>
+<a href="#" class="toggle-link stack-frame-args" data-target="stack-args-5">toggle arguments</a>
+<table class="code-excerpt" cellspacing="0" cellpadding="0">
+<tbody><tr>
+<td class="excerpt-number" data-number="60"></td>
+<td class="excerpt-line"><code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">{</span></span></code></td>
+</tr>
+<tr>
+<td class="excerpt-number" data-number="61"></td>
+<td class="excerpt-line"><code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$next&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">middleware</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">get</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">index</span><span style="color: #007700">);</span></span></code></td>
+</tr>
+<tr>
+<td class="excerpt-number" data-number="62"></td>
+<td class="excerpt-line"><code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">if&nbsp;(</span><span style="color: #0000BB">$next</span><span style="color: #007700">)&nbsp;{</span></span></code></td>
+</tr>
+<tr>
+<td class="excerpt-number" data-number="63"></td>
+<td class="excerpt-line"><code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">index</span><span style="color: #007700">++;</span></span></code></td>
+</tr>
+<tr>
+<td class="excerpt-number" data-number="64"></td>
+<td class="excerpt-line"><span class="code-highlight"><code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">return&nbsp;</span><span style="color: #0000BB">$next</span><span style="color: #007700">(</span><span style="color: #0000BB">$request</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$response</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">);</span></span></code></span></td>
+</tr>
+<tr>
+<td class="excerpt-number" data-number="65"></td>
+<td class="excerpt-line"><code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">}</span></span></code></td>
+</tr>
+<tr>
+<td class="excerpt-number" data-number="66"></td>
+<td class="excerpt-line"><code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;End&nbsp;of&nbsp;the&nbsp;queue</span></span></code></td>
+</tr>
+<tr>
+<td class="excerpt-number" data-number="67"></td>
+<td class="excerpt-line"><code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">return&nbsp;</span><span style="color: #0000BB">$response</span><span style="color: #007700">;</span></span></code></td>
+</tr>
+<tr>
+<td class="excerpt-number" data-number="68"></td>
+<td class="excerpt-line"><code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">}</span></span></code></td>
+</tr>
+</tbody></table>
+<div id="stack-args-5" style="display: none;">
+<pre>object(Cake\Http\ServerRequest) {
+	params =&gt; [
+		'plugin' =&gt; null,
+		'controller' =&gt; null,
+		'action' =&gt; null,
+		'_ext' =&gt; null,
+		'pass' =&gt; []
+	]
+	data =&gt; []
+	query =&gt; []
+	cookies =&gt; []
+	url =&gt; 'img/icons/sidebar-toggle-icons.png'
+	base =&gt; ''
+	webroot =&gt; '/'
+	here =&gt; '/img/icons/sidebar-toggle-icons.png'
+	trustProxy =&gt; false
+	[protected] _environment =&gt; [
+		'CONTEXT_DOCUMENT_ROOT' =&gt; '/home/hoanghahcm/domains/hoanghahcm.com/public_html',
+		'CONTEXT_PREFIX' =&gt; '',
+		'DOCUMENT_ROOT' =&gt; '/home/hoanghahcm/domains/hoanghahcm.com/public_html',
+		'GATEWAY_INTERFACE' =&gt; 'CGI/1.1',
+		'HTTP_ACCEPT' =&gt; 'text/html,image/png,image/jpeg,image/pjpeg,image/x-xbitmap,image/svg+xml,image/gif;q=0.9,*/*;q=0.1',
+		'HTTP_ACCEPT_ENCODING' =&gt; 'gzip',
+		'HTTP_ACCEPT_LANGUAGE' =&gt; 'en, *',
+		'HTTP_CDN_LOOP' =&gt; 'cloudflare',
+		'HTTP_CF_CONNECTING_IP' =&gt; '59.153.220.89',
+		'HTTP_CF_IPCOUNTRY' =&gt; 'VN',
+		'HTTP_CF_RAY' =&gt; '85c9b8ea4fab84c9-HKG',
+		'HTTP_CF_VISITOR' =&gt; '{"scheme":"https"}',
+		'HTTP_CONNECTION' =&gt; 'Keep-Alive',
+		'HTTP_HOST' =&gt; 'hoanghahcm.com',
+		'HTTP_REFERER' =&gt; 'http://hoanghahcm.com/css/corporate/style.css',
+		'HTTP_USER_AGENT' =&gt; 'Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)',
+		'HTTP_X_FORWARDED_FOR' =&gt; '59.153.220.89',
+		'HTTP_X_FORWARDED_PROTO' =&gt; 'https',
+		'PATH' =&gt; '/bin:/usr/bin',
+		'PHPRC' =&gt; '/usr/local/php56/lib/',
+		'PHP_INI_SCAN_DIR' =&gt; '/usr/local/directadmin/data/users/hoanghahcm/php/',
+		'QUERY_STRING' =&gt; '',
+		'REDIRECT_PHP_INI_SCAN_DIR' =&gt; '/usr/local/directadmin/data/users/hoanghahcm/php/',
+		'REDIRECT_REDIRECT_PHP_INI_SCAN_DIR' =&gt; '/usr/local/directadmin/data/users/hoanghahcm/php/',
+		'REDIRECT_REDIRECT_STATUS' =&gt; '200',
+		'REDIRECT_REDIRECT_UNIQUE_ID' =&gt; 'Zd9SFVk9PR8mmrZ336OX-QAAAXk',
+		'REDIRECT_REDIRECT_dont_vary' =&gt; '1',
+		'REDIRECT_REDIRECT_gzip_only_text_html' =&gt; '1',
+		'REDIRECT_REDIRECT_no_gzip' =&gt; '1',
+		'REDIRECT_STATUS' =&gt; '200',
+		'REDIRECT_UNIQUE_ID' =&gt; 'Zd9SFVk9PR8mmrZ336OX-QAAAXk',
+		'REDIRECT_URL' =&gt; '/webroot/img/icons/sidebar-toggle-icons.png',
+		'REDIRECT_dont_vary' =&gt; '1',
+		'REDIRECT_gzip_only_text_html' =&gt; '1',
+		'REDIRECT_no_gzip' =&gt; '1',
+		'REMOTE_ADDR' =&gt; '162.158.114.27',
+		'REMOTE_PORT' =&gt; '31102',
+		'REQUEST_METHOD' =&gt; 'GET',
+		'REQUEST_SCHEME' =&gt; 'http',
+		'REQUEST_URI' =&gt; '/img/icons/sidebar-toggle-icons.png',
+		'SCRIPT_FILENAME' =&gt; '/home/hoanghahcm/domains/hoanghahcm.com/public_html/webroot/index.php',
+		'SCRIPT_NAME' =&gt; '/webroot/index.php',
+		'SERVER_ADDR' =&gt; '45.117.171.159',
+		'SERVER_ADMIN' =&gt; '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="324557505f5341465740725a5d535c555a535a515f1c515d5f">[email&nbsp;protected]</a>',
+		'SERVER_NAME' =&gt; 'hoanghahcm.com',
+		'SERVER_PORT' =&gt; '80',
+		'SERVER_PROTOCOL' =&gt; 'HTTP/1.1',
+		'SERVER_SIGNATURE' =&gt; '',
+		'SERVER_SOFTWARE' =&gt; 'Apache/2',
+		'UNIQUE_ID' =&gt; 'Zd9SFVk9PR8mmrZ336OX-QAAAXk',
+		'gzip_only_text_html' =&gt; '1',
+		'PHP_SELF' =&gt; '/webroot/index.php',
+		'REQUEST_TIME_FLOAT' =&gt; (float) 1709134357.9456,
+		'REQUEST_TIME' =&gt; (int) 1709134357,
+		'ORIGINAL_REQUEST_METHOD' =&gt; 'GET'
+	]
+	[protected] _input =&gt; null
+	[protected] _detectors =&gt; [
+		'get' =&gt; [
+			'env' =&gt; 'REQUEST_METHOD',
+			'value' =&gt; 'GET'
+		],
+		'post' =&gt; [
+			'env' =&gt; 'REQUEST_METHOD',
+			'value' =&gt; 'POST'
+		],
+		'put' =&gt; [
+			'env' =&gt; 'REQUEST_METHOD',
+			'value' =&gt; 'PUT'
+		],
+		'patch' =&gt; [
+			'env' =&gt; 'REQUEST_METHOD',
+			'value' =&gt; 'PATCH'
+		],
+		'delete' =&gt; [
+			'env' =&gt; 'REQUEST_METHOD',
+			'value' =&gt; 'DELETE'
+		],
+		'head' =&gt; [
+			'env' =&gt; 'REQUEST_METHOD',
+			'value' =&gt; 'HEAD'
+		],
+		'options' =&gt; [
+			'env' =&gt; 'REQUEST_METHOD',
+			'value' =&gt; 'OPTIONS'
+		],
+		'ssl' =&gt; [
+			'env' =&gt; 'HTTPS',
+			'options' =&gt; [
+				[maximum depth reached]
+			]
+		],
+		'ajax' =&gt; [
+			'env' =&gt; 'HTTP_X_REQUESTED_WITH',
+			'value' =&gt; 'XMLHttpRequest'
+		],
+		'flash' =&gt; [
+			'env' =&gt; 'HTTP_USER_AGENT',
+			'pattern' =&gt; '/^(Shockwave|Adobe) Flash/'
+		],
+		'requested' =&gt; [
+			'param' =&gt; 'requested',
+			'value' =&gt; (int) 1
+		],
+		'json' =&gt; [
+			'accept' =&gt; [
+				[maximum depth reached]
+			],
+			'param' =&gt; '_ext',
+			'value' =&gt; 'json'
+		],
+		'xml' =&gt; [
+			'accept' =&gt; [
+				[maximum depth reached]
+			],
+			'param' =&gt; '_ext',
+			'value' =&gt; 'xml'
+		],
+		'mobile' =&gt; object(Closure) {},
+		'tablet' =&gt; object(Closure) {}
+	]
+	[protected] _detectorCache =&gt; []
+	[protected] stream =&gt; object(Zend\Diactoros\PhpInputStream) {
+		[protected] resource =&gt; resource
+		[protected] stream =&gt; 'php://input'
+		[private] cache =&gt; ''
+		[private] reachedEof =&gt; false
+	}
+	[protected] uri =&gt; object(Zend\Diactoros\Uri) {
+		base =&gt; ''
+		webroot =&gt; '/'
+		[protected] allowedSchemes =&gt; [
+			[maximum depth reached]
+		]
+		[private] scheme =&gt; 'https'
+		[private] userInfo =&gt; ''
+		[private] host =&gt; 'hoanghahcm.com'
+		[private] port =&gt; null
+		[private] path =&gt; '/img/icons/sidebar-toggle-icons.png'
+		[private] query =&gt; ''
+		[private] fragment =&gt; ''
+		[private] uriString =&gt; null
+	}
+	[protected] session =&gt; object(Cake\Network\Session) {
+		[protected] _engine =&gt; null
+		[protected] _started =&gt; null
+		[protected] _lifetime =&gt; '1440'
+		[protected] _isCLI =&gt; false
+	}
+	[protected] attributes =&gt; []
+	[protected] emulatedAttributes =&gt; [
+		(int) 0 =&gt; 'session',
+		(int) 1 =&gt; 'webroot',
+		(int) 2 =&gt; 'base',
+		(int) 3 =&gt; 'params'
+	]
+	[protected] uploadedFiles =&gt; []
+	[protected] protocol =&gt; null
+	[protected] requestTarget =&gt; null
+}
+object(Cake\Http\Response) {
+
+	'status' =&gt; (int) 200,
+	'contentType' =&gt; 'text/html',
+	'headers' =&gt; [
+		'Content-Type' =&gt; [
+			(int) 0 =&gt; 'text/html; charset=UTF-8'
+		]
+	],
+	'file' =&gt; null,
+	'fileRange' =&gt; [],
+	'cookies' =&gt; object(Cake\Http\Cookie\CookieCollection) {
+		[protected] cookies =&gt; [[maximum depth reached]]
+	},
+	'cacheDirectives' =&gt; [],
+	'body' =&gt; ''
+
+}
+object(Cake\Http\Runner) {
+	[protected] index =&gt; (int) 4
+	[protected] middleware =&gt; object(Cake\Http\MiddlewareQueue) {
+		[protected] queue =&gt; [
+			[maximum depth reached]
+		]
+		[protected] callables =&gt; [
+			[maximum depth reached]
+		]
+	}
+}</pre>
+</div>
+</div>
+<div id="stack-frame-6" style="display:none;" class="stack-details">
+<span class="stack-frame-file">/home/hoanghahcm/domains/hoanghahcm.com/public_html/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php</span>
+<a href="#" class="toggle-link stack-frame-args" data-target="stack-args-6">toggle arguments</a>
+<table class="code-excerpt" cellspacing="0" cellpadding="0">
+<tbody><tr>
+<td class="excerpt-number" data-number="93"></td>
+<td class="excerpt-line"><code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">}</span></span></code></td>
+</tr>
+<tr>
+<td class="excerpt-number" data-number="94"></td>
+<td class="excerpt-line"><code><span style="color: #000000"><span style="color: #0000BB"></span></span></code></td>
+</tr>
+<tr>
+<td class="excerpt-number" data-number="95"></td>
+<td class="excerpt-line"><code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$assetFile&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_getAssetFile</span><span style="color: #007700">(</span><span style="color: #0000BB">$url</span><span style="color: #007700">);</span></span></code></td>
+</tr>
+<tr>
+<td class="excerpt-number" data-number="96"></td>
+<td class="excerpt-line"><code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">if&nbsp;(</span><span style="color: #0000BB">$assetFile&nbsp;</span><span style="color: #007700">===&nbsp;</span><span style="color: #0000BB">null&nbsp;</span><span style="color: #007700">||&nbsp;!</span><span style="color: #0000BB">file_exists</span><span style="color: #007700">(</span><span style="color: #0000BB">$assetFile</span><span style="color: #007700">))&nbsp;{</span></span></code></td>
+</tr>
+<tr>
+<td class="excerpt-number" data-number="97"></td>
+<td class="excerpt-line"><span class="code-highlight"><code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">return&nbsp;</span><span style="color: #0000BB">$next</span><span style="color: #007700">(</span><span style="color: #0000BB">$request</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$response</span><span style="color: #007700">);</span></span></code></span></td>
+</tr>
+<tr>
+<td class="excerpt-number" data-number="98"></td>
+<td class="excerpt-line"><code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">}</span></span></code></td>
+</tr>
+<tr>
+<td class="excerpt-number" data-number="99"></td>
+<td class="excerpt-line"><code><span style="color: #000000"><span style="color: #0000BB"></span></span></code></td>
+</tr>
+<tr>
+<td class="excerpt-number" data-number="100"></td>
+<td class="excerpt-line"><code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$file&nbsp;</span><span style="color: #007700">=&nbsp;new&nbsp;</span><span style="color: #0000BB">File</span><span style="color: #007700">(</span><span style="color: #0000BB">$assetFile</span><span style="color: #007700">);</span></span></code></td>
+</tr>
+<tr>
+<td class="excerpt-number" data-number="101"></td>
+<td class="excerpt-line"><code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$modifiedTime&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$file</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">lastChange</span><span style="color: #007700">();</span></span></code></td>
+</tr>
+</tbody></table>
+<div id="stack-args-6" style="display: none;">
+<pre>object(Cake\Http\ServerRequest) {
+	params =&gt; [
+		'plugin' =&gt; null,
+		'controller' =&gt; null,
+		'action' =&gt; null,
+		'_ext' =&gt; null,
+		'pass' =&gt; []
+	]
+	data =&gt; []
+	query =&gt; []
+	cookies =&gt; []
+	url =&gt; 'img/icons/sidebar-toggle-icons.png'
+	base =&gt; ''
+	webroot =&gt; '/'
+	here =&gt; '/img/icons/sidebar-toggle-icons.png'
+	trustProxy =&gt; false
+	[protected] _environment =&gt; [
+		'CONTEXT_DOCUMENT_ROOT' =&gt; '/home/hoanghahcm/domains/hoanghahcm.com/public_html',
+		'CONTEXT_PREFIX' =&gt; '',
+		'DOCUMENT_ROOT' =&gt; '/home/hoanghahcm/domains/hoanghahcm.com/public_html',
+		'GATEWAY_INTERFACE' =&gt; 'CGI/1.1',
+		'HTTP_ACCEPT' =&gt; 'text/html,image/png,image/jpeg,image/pjpeg,image/x-xbitmap,image/svg+xml,image/gif;q=0.9,*/*;q=0.1',
+		'HTTP_ACCEPT_ENCODING' =&gt; 'gzip',
+		'HTTP_ACCEPT_LANGUAGE' =&gt; 'en, *',
+		'HTTP_CDN_LOOP' =&gt; 'cloudflare',
+		'HTTP_CF_CONNECTING_IP' =&gt; '59.153.220.89',
+		'HTTP_CF_IPCOUNTRY' =&gt; 'VN',
+		'HTTP_CF_RAY' =&gt; '85c9b8ea4fab84c9-HKG',
+		'HTTP_CF_VISITOR' =&gt; '{"scheme":"https"}',
+		'HTTP_CONNECTION' =&gt; 'Keep-Alive',
+		'HTTP_HOST' =&gt; 'hoanghahcm.com',
+		'HTTP_REFERER' =&gt; 'http://hoanghahcm.com/css/corporate/style.css',
+		'HTTP_USER_AGENT' =&gt; 'Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)',
+		'HTTP_X_FORWARDED_FOR' =&gt; '59.153.220.89',
+		'HTTP_X_FORWARDED_PROTO' =&gt; 'https',
+		'PATH' =&gt; '/bin:/usr/bin',
+		'PHPRC' =&gt; '/usr/local/php56/lib/',
+		'PHP_INI_SCAN_DIR' =&gt; '/usr/local/directadmin/data/users/hoanghahcm/php/',
+		'QUERY_STRING' =&gt; '',
+		'REDIRECT_PHP_INI_SCAN_DIR' =&gt; '/usr/local/directadmin/data/users/hoanghahcm/php/',
+		'REDIRECT_REDIRECT_PHP_INI_SCAN_DIR' =&gt; '/usr/local/directadmin/data/users/hoanghahcm/php/',
+		'REDIRECT_REDIRECT_STATUS' =&gt; '200',
+		'REDIRECT_REDIRECT_UNIQUE_ID' =&gt; 'Zd9SFVk9PR8mmrZ336OX-QAAAXk',
+		'REDIRECT_REDIRECT_dont_vary' =&gt; '1',
+		'REDIRECT_REDIRECT_gzip_only_text_html' =&gt; '1',
+		'REDIRECT_REDIRECT_no_gzip' =&gt; '1',
+		'REDIRECT_STATUS' =&gt; '200',
+		'REDIRECT_UNIQUE_ID' =&gt; 'Zd9SFVk9PR8mmrZ336OX-QAAAXk',
+		'REDIRECT_URL' =&gt; '/webroot/img/icons/sidebar-toggle-icons.png',
+		'REDIRECT_dont_vary' =&gt; '1',
+		'REDIRECT_gzip_only_text_html' =&gt; '1',
+		'REDIRECT_no_gzip' =&gt; '1',
+		'REMOTE_ADDR' =&gt; '162.158.114.27',
+		'REMOTE_PORT' =&gt; '31102',
+		'REQUEST_METHOD' =&gt; 'GET',
+		'REQUEST_SCHEME' =&gt; 'http',
+		'REQUEST_URI' =&gt; '/img/icons/sidebar-toggle-icons.png',
+		'SCRIPT_FILENAME' =&gt; '/home/hoanghahcm/domains/hoanghahcm.com/public_html/webroot/index.php',
+		'SCRIPT_NAME' =&gt; '/webroot/index.php',
+		'SERVER_ADDR' =&gt; '45.117.171.159',
+		'SERVER_ADMIN' =&gt; '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="b8cfdddad5d9cbccddcaf8d0d7d9d6dfd0d9d0dbd596dbd7d5">[email&nbsp;protected]</a>',
+		'SERVER_NAME' =&gt; 'hoanghahcm.com',
+		'SERVER_PORT' =&gt; '80',
+		'SERVER_PROTOCOL' =&gt; 'HTTP/1.1',
+		'SERVER_SIGNATURE' =&gt; '',
+		'SERVER_SOFTWARE' =&gt; 'Apache/2',
+		'UNIQUE_ID' =&gt; 'Zd9SFVk9PR8mmrZ336OX-QAAAXk',
+		'gzip_only_text_html' =&gt; '1',
+		'PHP_SELF' =&gt; '/webroot/index.php',
+		'REQUEST_TIME_FLOAT' =&gt; (float) 1709134357.9456,
+		'REQUEST_TIME' =&gt; (int) 1709134357,
+		'ORIGINAL_REQUEST_METHOD' =&gt; 'GET'
+	]
+	[protected] _input =&gt; null
+	[protected] _detectors =&gt; [
+		'get' =&gt; [
+			'env' =&gt; 'REQUEST_METHOD',
+			'value' =&gt; 'GET'
+		],
+		'post' =&gt; [
+			'env' =&gt; 'REQUEST_METHOD',
+			'value' =&gt; 'POST'
+		],
+		'put' =&gt; [
+			'env' =&gt; 'REQUEST_METHOD',
+			'value' =&gt; 'PUT'
+		],
+		'patch' =&gt; [
+			'env' =&gt; 'REQUEST_METHOD',
+			'value' =&gt; 'PATCH'
+		],
+		'delete' =&gt; [
+			'env' =&gt; 'REQUEST_METHOD',
+			'value' =&gt; 'DELETE'
+		],
+		'head' =&gt; [
+			'env' =&gt; 'REQUEST_METHOD',
+			'value' =&gt; 'HEAD'
+		],
+		'options' =&gt; [
+			'env' =&gt; 'REQUEST_METHOD',
+			'value' =&gt; 'OPTIONS'
+		],
+		'ssl' =&gt; [
+			'env' =&gt; 'HTTPS',
+			'options' =&gt; [
+				[maximum depth reached]
+			]
+		],
+		'ajax' =&gt; [
+			'env' =&gt; 'HTTP_X_REQUESTED_WITH',
+			'value' =&gt; 'XMLHttpRequest'
+		],
+		'flash' =&gt; [
+			'env' =&gt; 'HTTP_USER_AGENT',
+			'pattern' =&gt; '/^(Shockwave|Adobe) Flash/'
+		],
+		'requested' =&gt; [
+			'param' =&gt; 'requested',
+			'value' =&gt; (int) 1
+		],
+		'json' =&gt; [
+			'accept' =&gt; [
+				[maximum depth reached]
+			],
+			'param' =&gt; '_ext',
+			'value' =&gt; 'json'
+		],
+		'xml' =&gt; [
+			'accept' =&gt; [
+				[maximum depth reached]
+			],
+			'param' =&gt; '_ext',
+			'value' =&gt; 'xml'
+		],
+		'mobile' =&gt; object(Closure) {},
+		'tablet' =&gt; object(Closure) {}
+	]
+	[protected] _detectorCache =&gt; []
+	[protected] stream =&gt; object(Zend\Diactoros\PhpInputStream) {
+		[protected] resource =&gt; resource
+		[protected] stream =&gt; 'php://input'
+		[private] cache =&gt; ''
+		[private] reachedEof =&gt; false
+	}
+	[protected] uri =&gt; object(Zend\Diactoros\Uri) {
+		base =&gt; ''
+		webroot =&gt; '/'
+		[protected] allowedSchemes =&gt; [
+			[maximum depth reached]
+		]
+		[private] scheme =&gt; 'https'
+		[private] userInfo =&gt; ''
+		[private] host =&gt; 'hoanghahcm.com'
+		[private] port =&gt; null
+		[private] path =&gt; '/img/icons/sidebar-toggle-icons.png'
+		[private] query =&gt; ''
+		[private] fragment =&gt; ''
+		[private] uriString =&gt; null
+	}
+	[protected] session =&gt; object(Cake\Network\Session) {
+		[protected] _engine =&gt; null
+		[protected] _started =&gt; null
+		[protected] _lifetime =&gt; '1440'
+		[protected] _isCLI =&gt; false
+	}
+	[protected] attributes =&gt; []
+	[protected] emulatedAttributes =&gt; [
+		(int) 0 =&gt; 'session',
+		(int) 1 =&gt; 'webroot',
+		(int) 2 =&gt; 'base',
+		(int) 3 =&gt; 'params'
+	]
+	[protected] uploadedFiles =&gt; []
+	[protected] protocol =&gt; null
+	[protected] requestTarget =&gt; null
+}
+object(Cake\Http\Response) {
+
+	'status' =&gt; (int) 200,
+	'contentType' =&gt; 'text/html',
+	'headers' =&gt; [
+		'Content-Type' =&gt; [
+			(int) 0 =&gt; 'text/html; charset=UTF-8'
+		]
+	],
+	'file' =&gt; null,
+	'fileRange' =&gt; [],
+	'cookies' =&gt; object(Cake\Http\Cookie\CookieCollection) {
+		[protected] cookies =&gt; [[maximum depth reached]]
+	},
+	'cacheDirectives' =&gt; [],
+	'body' =&gt; ''
+
+}</pre>
+</div>
+</div>
+<div id="stack-frame-7" style="display:none;" class="stack-details">
+<span class="stack-frame-file">/home/hoanghahcm/domains/hoanghahcm.com/public_html/vendor/cakephp/cakephp/src/Http/Runner.php</span>
+<a href="#" class="toggle-link stack-frame-args" data-target="stack-args-7">toggle arguments</a>
+<table class="code-excerpt" cellspacing="0" cellpadding="0">
+<tbody><tr>
+<td class="excerpt-number" data-number="60"></td>
+<td class="excerpt-line"><code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">{</span></span></code></td>
+</tr>
+<tr>
+<td class="excerpt-number" data-number="61"></td>
+<td class="excerpt-line"><code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$next&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">middleware</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">get</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">index</span><span style="color: #007700">);</span></span></code></td>
+</tr>
+<tr>
+<td class="excerpt-number" data-number="62"></td>
+<td class="excerpt-line"><code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">if&nbsp;(</span><span style="color: #0000BB">$next</span><span style="color: #007700">)&nbsp;{</span></span></code></td>
+</tr>
+<tr>
+<td class="excerpt-number" data-number="63"></td>
+<td class="excerpt-line"><code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">index</span><span style="color: #007700">++;</span></span></code></td>
+</tr>
+<tr>
+<td class="excerpt-number" data-number="64"></td>
+<td class="excerpt-line"><span class="code-highlight"><code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">return&nbsp;</span><span style="color: #0000BB">$next</span><span style="color: #007700">(</span><span style="color: #0000BB">$request</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$response</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">);</span></span></code></span></td>
+</tr>
+<tr>
+<td class="excerpt-number" data-number="65"></td>
+<td class="excerpt-line"><code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">}</span></span></code></td>
+</tr>
+<tr>
+<td class="excerpt-number" data-number="66"></td>
+<td class="excerpt-line"><code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;End&nbsp;of&nbsp;the&nbsp;queue</span></span></code></td>
+</tr>
+<tr>
+<td class="excerpt-number" data-number="67"></td>
+<td class="excerpt-line"><code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">return&nbsp;</span><span style="color: #0000BB">$response</span><span style="color: #007700">;</span></span></code></td>
+</tr>
+<tr>
+<td class="excerpt-number" data-number="68"></td>
+<td class="excerpt-line"><code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">}</span></span></code></td>
+</tr>
+</tbody></table>
+<div id="stack-args-7" style="display: none;">
+<pre>object(Cake\Http\ServerRequest) {
+	params =&gt; [
+		'plugin' =&gt; null,
+		'controller' =&gt; null,
+		'action' =&gt; null,
+		'_ext' =&gt; null,
+		'pass' =&gt; []
+	]
+	data =&gt; []
+	query =&gt; []
+	cookies =&gt; []
+	url =&gt; 'img/icons/sidebar-toggle-icons.png'
+	base =&gt; ''
+	webroot =&gt; '/'
+	here =&gt; '/img/icons/sidebar-toggle-icons.png'
+	trustProxy =&gt; false
+	[protected] _environment =&gt; [
+		'CONTEXT_DOCUMENT_ROOT' =&gt; '/home/hoanghahcm/domains/hoanghahcm.com/public_html',
+		'CONTEXT_PREFIX' =&gt; '',
+		'DOCUMENT_ROOT' =&gt; '/home/hoanghahcm/domains/hoanghahcm.com/public_html',
+		'GATEWAY_INTERFACE' =&gt; 'CGI/1.1',
+		'HTTP_ACCEPT' =&gt; 'text/html,image/png,image/jpeg,image/pjpeg,image/x-xbitmap,image/svg+xml,image/gif;q=0.9,*/*;q=0.1',
+		'HTTP_ACCEPT_ENCODING' =&gt; 'gzip',
+		'HTTP_ACCEPT_LANGUAGE' =&gt; 'en, *',
+		'HTTP_CDN_LOOP' =&gt; 'cloudflare',
+		'HTTP_CF_CONNECTING_IP' =&gt; '59.153.220.89',
+		'HTTP_CF_IPCOUNTRY' =&gt; 'VN',
+		'HTTP_CF_RAY' =&gt; '85c9b8ea4fab84c9-HKG',
+		'HTTP_CF_VISITOR' =&gt; '{"scheme":"https"}',
+		'HTTP_CONNECTION' =&gt; 'Keep-Alive',
+		'HTTP_HOST' =&gt; 'hoanghahcm.com',
+		'HTTP_REFERER' =&gt; 'http://hoanghahcm.com/css/corporate/style.css',
+		'HTTP_USER_AGENT' =&gt; 'Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)',
+		'HTTP_X_FORWARDED_FOR' =&gt; '59.153.220.89',
+		'HTTP_X_FORWARDED_PROTO' =&gt; 'https',
+		'PATH' =&gt; '/bin:/usr/bin',
+		'PHPRC' =&gt; '/usr/local/php56/lib/',
+		'PHP_INI_SCAN_DIR' =&gt; '/usr/local/directadmin/data/users/hoanghahcm/php/',
+		'QUERY_STRING' =&gt; '',
+		'REDIRECT_PHP_INI_SCAN_DIR' =&gt; '/usr/local/directadmin/data/users/hoanghahcm/php/',
+		'REDIRECT_REDIRECT_PHP_INI_SCAN_DIR' =&gt; '/usr/local/directadmin/data/users/hoanghahcm/php/',
+		'REDIRECT_REDIRECT_STATUS' =&gt; '200',
+		'REDIRECT_REDIRECT_UNIQUE_ID' =&gt; 'Zd9SFVk9PR8mmrZ336OX-QAAAXk',
+		'REDIRECT_REDIRECT_dont_vary' =&gt; '1',
+		'REDIRECT_REDIRECT_gzip_only_text_html' =&gt; '1',
+		'REDIRECT_REDIRECT_no_gzip' =&gt; '1',
+		'REDIRECT_STATUS' =&gt; '200',
+		'REDIRECT_UNIQUE_ID' =&gt; 'Zd9SFVk9PR8mmrZ336OX-QAAAXk',
+		'REDIRECT_URL' =&gt; '/webroot/img/icons/sidebar-toggle-icons.png',
+		'REDIRECT_dont_vary' =&gt; '1',
+		'REDIRECT_gzip_only_text_html' =&gt; '1',
+		'REDIRECT_no_gzip' =&gt; '1',
+		'REMOTE_ADDR' =&gt; '162.158.114.27',
+		'REMOTE_PORT' =&gt; '31102',
+		'REQUEST_METHOD' =&gt; 'GET',
+		'REQUEST_SCHEME' =&gt; 'http',
+		'REQUEST_URI' =&gt; '/img/icons/sidebar-toggle-icons.png',
+		'SCRIPT_FILENAME' =&gt; '/home/hoanghahcm/domains/hoanghahcm.com/public_html/webroot/index.php',
+		'SCRIPT_NAME' =&gt; '/webroot/index.php',
+		'SERVER_ADDR' =&gt; '45.117.171.159',
+		'SERVER_ADMIN' =&gt; '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="5c2b393e313d2f28392e1c34333d323b343d343f31723f3331">[email&nbsp;protected]</a>',
+		'SERVER_NAME' =&gt; 'hoanghahcm.com',
+		'SERVER_PORT' =&gt; '80',
+		'SERVER_PROTOCOL' =&gt; 'HTTP/1.1',
+		'SERVER_SIGNATURE' =&gt; '',
+		'SERVER_SOFTWARE' =&gt; 'Apache/2',
+		'UNIQUE_ID' =&gt; 'Zd9SFVk9PR8mmrZ336OX-QAAAXk',
+		'gzip_only_text_html' =&gt; '1',
+		'PHP_SELF' =&gt; '/webroot/index.php',
+		'REQUEST_TIME_FLOAT' =&gt; (float) 1709134357.9456,
+		'REQUEST_TIME' =&gt; (int) 1709134357,
+		'ORIGINAL_REQUEST_METHOD' =&gt; 'GET'
+	]
+	[protected] _input =&gt; null
+	[protected] _detectors =&gt; [
+		'get' =&gt; [
+			'env' =&gt; 'REQUEST_METHOD',
+			'value' =&gt; 'GET'
+		],
+		'post' =&gt; [
+			'env' =&gt; 'REQUEST_METHOD',
+			'value' =&gt; 'POST'
+		],
+		'put' =&gt; [
+			'env' =&gt; 'REQUEST_METHOD',
+			'value' =&gt; 'PUT'
+		],
+		'patch' =&gt; [
+			'env' =&gt; 'REQUEST_METHOD',
+			'value' =&gt; 'PATCH'
+		],
+		'delete' =&gt; [
+			'env' =&gt; 'REQUEST_METHOD',
+			'value' =&gt; 'DELETE'
+		],
+		'head' =&gt; [
+			'env' =&gt; 'REQUEST_METHOD',
+			'value' =&gt; 'HEAD'
+		],
+		'options' =&gt; [
+			'env' =&gt; 'REQUEST_METHOD',
+			'value' =&gt; 'OPTIONS'
+		],
+		'ssl' =&gt; [
+			'env' =&gt; 'HTTPS',
+			'options' =&gt; [
+				[maximum depth reached]
+			]
+		],
+		'ajax' =&gt; [
+			'env' =&gt; 'HTTP_X_REQUESTED_WITH',
+			'value' =&gt; 'XMLHttpRequest'
+		],
+		'flash' =&gt; [
+			'env' =&gt; 'HTTP_USER_AGENT',
+			'pattern' =&gt; '/^(Shockwave|Adobe) Flash/'
+		],
+		'requested' =&gt; [
+			'param' =&gt; 'requested',
+			'value' =&gt; (int) 1
+		],
+		'json' =&gt; [
+			'accept' =&gt; [
+				[maximum depth reached]
+			],
+			'param' =&gt; '_ext',
+			'value' =&gt; 'json'
+		],
+		'xml' =&gt; [
+			'accept' =&gt; [
+				[maximum depth reached]
+			],
+			'param' =&gt; '_ext',
+			'value' =&gt; 'xml'
+		],
+		'mobile' =&gt; object(Closure) {},
+		'tablet' =&gt; object(Closure) {}
+	]
+	[protected] _detectorCache =&gt; []
+	[protected] stream =&gt; object(Zend\Diactoros\PhpInputStream) {
+		[protected] resource =&gt; resource
+		[protected] stream =&gt; 'php://input'
+		[private] cache =&gt; ''
+		[private] reachedEof =&gt; false
+	}
+	[protected] uri =&gt; object(Zend\Diactoros\Uri) {
+		base =&gt; ''
+		webroot =&gt; '/'
+		[protected] allowedSchemes =&gt; [
+			[maximum depth reached]
+		]
+		[private] scheme =&gt; 'https'
+		[private] userInfo =&gt; ''
+		[private] host =&gt; 'hoanghahcm.com'
+		[private] port =&gt; null
+		[private] path =&gt; '/img/icons/sidebar-toggle-icons.png'
+		[private] query =&gt; ''
+		[private] fragment =&gt; ''
+		[private] uriString =&gt; null
+	}
+	[protected] session =&gt; object(Cake\Network\Session) {
+		[protected] _engine =&gt; null
+		[protected] _started =&gt; null
+		[protected] _lifetime =&gt; '1440'
+		[protected] _isCLI =&gt; false
+	}
+	[protected] attributes =&gt; []
+	[protected] emulatedAttributes =&gt; [
+		(int) 0 =&gt; 'session',
+		(int) 1 =&gt; 'webroot',
+		(int) 2 =&gt; 'base',
+		(int) 3 =&gt; 'params'
+	]
+	[protected] uploadedFiles =&gt; []
+	[protected] protocol =&gt; null
+	[protected] requestTarget =&gt; null
+}
+object(Cake\Http\Response) {
+
+	'status' =&gt; (int) 200,
+	'contentType' =&gt; 'text/html',
+	'headers' =&gt; [
+		'Content-Type' =&gt; [
+			(int) 0 =&gt; 'text/html; charset=UTF-8'
+		]
+	],
+	'file' =&gt; null,
+	'fileRange' =&gt; [],
+	'cookies' =&gt; object(Cake\Http\Cookie\CookieCollection) {
+		[protected] cookies =&gt; [[maximum depth reached]]
+	},
+	'cacheDirectives' =&gt; [],
+	'body' =&gt; ''
+
+}
+object(Cake\Http\Runner) {
+	[protected] index =&gt; (int) 4
+	[protected] middleware =&gt; object(Cake\Http\MiddlewareQueue) {
+		[protected] queue =&gt; [
+			[maximum depth reached]
+		]
+		[protected] callables =&gt; [
+			[maximum depth reached]
+		]
+	}
+}</pre>
+</div>
+</div>
+<div id="stack-frame-8" style="display:none;" class="stack-details">
+<span class="stack-frame-file">/home/hoanghahcm/domains/hoanghahcm.com/public_html/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php</span>
+<a href="#" class="toggle-link stack-frame-args" data-target="stack-args-8">toggle arguments</a>
+<table class="code-excerpt" cellspacing="0" cellpadding="0">
+<tbody><tr>
+<td class="excerpt-number" data-number="91"></td>
+<td class="excerpt-line"><code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">*/</span></span></code></td>
+</tr>
+<tr>
+<td class="excerpt-number" data-number="92"></td>
+<td class="excerpt-line"><code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">__invoke</span><span style="color: #007700">(</span><span style="color: #0000BB">$request</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$response</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$next</span><span style="color: #007700">)</span></span></code></td>
+</tr>
+<tr>
+<td class="excerpt-number" data-number="93"></td>
+<td class="excerpt-line"><code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">{</span></span></code></td>
+</tr>
+<tr>
+<td class="excerpt-number" data-number="94"></td>
+<td class="excerpt-line"><code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">try&nbsp;{</span></span></code></td>
+</tr>
+<tr>
+<td class="excerpt-number" data-number="95"></td>
+<td class="excerpt-line"><span class="code-highlight"><code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">return&nbsp;</span><span style="color: #0000BB">$next</span><span style="color: #007700">(</span><span style="color: #0000BB">$request</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$response</span><span style="color: #007700">);</span></span></code></span></td>
+</tr>
+<tr>
+<td class="excerpt-number" data-number="96"></td>
+<td class="excerpt-line"><code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">}&nbsp;catch&nbsp;(</span><span style="color: #0000BB">Exception&nbsp;$e</span><span style="color: #007700">)&nbsp;{</span></span></code></td>
+</tr>
+<tr>
+<td class="excerpt-number" data-number="97"></td>
+<td class="excerpt-line"><code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">handleException</span><span style="color: #007700">(</span><span style="color: #0000BB">$e</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$request</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$response</span><span style="color: #007700">);</span></span></code></td>
+</tr>
+<tr>
+<td class="excerpt-number" data-number="98"></td>
+<td class="excerpt-line"><code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">}</span></span></code></td>
+</tr>
+<tr>
+<td class="excerpt-number" data-number="99"></td>
+<td class="excerpt-line"><code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">}</span></span></code></td>
+</tr>
+</tbody></table>
+<div id="stack-args-8" style="display: none;">
+<pre>object(Cake\Http\ServerRequest) {
+	params =&gt; [
+		'plugin' =&gt; null,
+		'controller' =&gt; null,
+		'action' =&gt; null,
+		'_ext' =&gt; null,
+		'pass' =&gt; []
+	]
+	data =&gt; []
+	query =&gt; []
+	cookies =&gt; []
+	url =&gt; 'img/icons/sidebar-toggle-icons.png'
+	base =&gt; ''
+	webroot =&gt; '/'
+	here =&gt; '/img/icons/sidebar-toggle-icons.png'
+	trustProxy =&gt; false
+	[protected] _environment =&gt; [
+		'CONTEXT_DOCUMENT_ROOT' =&gt; '/home/hoanghahcm/domains/hoanghahcm.com/public_html',
+		'CONTEXT_PREFIX' =&gt; '',
+		'DOCUMENT_ROOT' =&gt; '/home/hoanghahcm/domains/hoanghahcm.com/public_html',
+		'GATEWAY_INTERFACE' =&gt; 'CGI/1.1',
+		'HTTP_ACCEPT' =&gt; 'text/html,image/png,image/jpeg,image/pjpeg,image/x-xbitmap,image/svg+xml,image/gif;q=0.9,*/*;q=0.1',
+		'HTTP_ACCEPT_ENCODING' =&gt; 'gzip',
+		'HTTP_ACCEPT_LANGUAGE' =&gt; 'en, *',
+		'HTTP_CDN_LOOP' =&gt; 'cloudflare',
+		'HTTP_CF_CONNECTING_IP' =&gt; '59.153.220.89',
+		'HTTP_CF_IPCOUNTRY' =&gt; 'VN',
+		'HTTP_CF_RAY' =&gt; '85c9b8ea4fab84c9-HKG',
+		'HTTP_CF_VISITOR' =&gt; '{"scheme":"https"}',
+		'HTTP_CONNECTION' =&gt; 'Keep-Alive',
+		'HTTP_HOST' =&gt; 'hoanghahcm.com',
+		'HTTP_REFERER' =&gt; 'http://hoanghahcm.com/css/corporate/style.css',
+		'HTTP_USER_AGENT' =&gt; 'Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)',
+		'HTTP_X_FORWARDED_FOR' =&gt; '59.153.220.89',
+		'HTTP_X_FORWARDED_PROTO' =&gt; 'https',
+		'PATH' =&gt; '/bin:/usr/bin',
+		'PHPRC' =&gt; '/usr/local/php56/lib/',
+		'PHP_INI_SCAN_DIR' =&gt; '/usr/local/directadmin/data/users/hoanghahcm/php/',
+		'QUERY_STRING' =&gt; '',
+		'REDIRECT_PHP_INI_SCAN_DIR' =&gt; '/usr/local/directadmin/data/users/hoanghahcm/php/',
+		'REDIRECT_REDIRECT_PHP_INI_SCAN_DIR' =&gt; '/usr/local/directadmin/data/users/hoanghahcm/php/',
+		'REDIRECT_REDIRECT_STATUS' =&gt; '200',
+		'REDIRECT_REDIRECT_UNIQUE_ID' =&gt; 'Zd9SFVk9PR8mmrZ336OX-QAAAXk',
+		'REDIRECT_REDIRECT_dont_vary' =&gt; '1',
+		'REDIRECT_REDIRECT_gzip_only_text_html' =&gt; '1',
+		'REDIRECT_REDIRECT_no_gzip' =&gt; '1',
+		'REDIRECT_STATUS' =&gt; '200',
+		'REDIRECT_UNIQUE_ID' =&gt; 'Zd9SFVk9PR8mmrZ336OX-QAAAXk',
+		'REDIRECT_URL' =&gt; '/webroot/img/icons/sidebar-toggle-icons.png',
+		'REDIRECT_dont_vary' =&gt; '1',
+		'REDIRECT_gzip_only_text_html' =&gt; '1',
+		'REDIRECT_no_gzip' =&gt; '1',
+		'REMOTE_ADDR' =&gt; '162.158.114.27',
+		'REMOTE_PORT' =&gt; '31102',
+		'REQUEST_METHOD' =&gt; 'GET',
+		'REQUEST_SCHEME' =&gt; 'http',
+		'REQUEST_URI' =&gt; '/img/icons/sidebar-toggle-icons.png',
+		'SCRIPT_FILENAME' =&gt; '/home/hoanghahcm/domains/hoanghahcm.com/public_html/webroot/index.php',
+		'SCRIPT_NAME' =&gt; '/webroot/index.php',
+		'SERVER_ADDR' =&gt; '45.117.171.159',
+		'SERVER_ADMIN' =&gt; '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="176072757a7664637265577f787679707f767f747a3974787a">[email&nbsp;protected]</a>',
+		'SERVER_NAME' =&gt; 'hoanghahcm.com',
+		'SERVER_PORT' =&gt; '80',
+		'SERVER_PROTOCOL' =&gt; 'HTTP/1.1',
+		'SERVER_SIGNATURE' =&gt; '',
+		'SERVER_SOFTWARE' =&gt; 'Apache/2',
+		'UNIQUE_ID' =&gt; 'Zd9SFVk9PR8mmrZ336OX-QAAAXk',
+		'gzip_only_text_html' =&gt; '1',
+		'PHP_SELF' =&gt; '/webroot/index.php',
+		'REQUEST_TIME_FLOAT' =&gt; (float) 1709134357.9456,
+		'REQUEST_TIME' =&gt; (int) 1709134357,
+		'ORIGINAL_REQUEST_METHOD' =&gt; 'GET'
+	]
+	[protected] _input =&gt; null
+	[protected] _detectors =&gt; [
+		'get' =&gt; [
+			'env' =&gt; 'REQUEST_METHOD',
+			'value' =&gt; 'GET'
+		],
+		'post' =&gt; [
+			'env' =&gt; 'REQUEST_METHOD',
+			'value' =&gt; 'POST'
+		],
+		'put' =&gt; [
+			'env' =&gt; 'REQUEST_METHOD',
+			'value' =&gt; 'PUT'
+		],
+		'patch' =&gt; [
+			'env' =&gt; 'REQUEST_METHOD',
+			'value' =&gt; 'PATCH'
+		],
+		'delete' =&gt; [
+			'env' =&gt; 'REQUEST_METHOD',
+			'value' =&gt; 'DELETE'
+		],
+		'head' =&gt; [
+			'env' =&gt; 'REQUEST_METHOD',
+			'value' =&gt; 'HEAD'
+		],
+		'options' =&gt; [
+			'env' =&gt; 'REQUEST_METHOD',
+			'value' =&gt; 'OPTIONS'
+		],
+		'ssl' =&gt; [
+			'env' =&gt; 'HTTPS',
+			'options' =&gt; [
+				[maximum depth reached]
+			]
+		],
+		'ajax' =&gt; [
+			'env' =&gt; 'HTTP_X_REQUESTED_WITH',
+			'value' =&gt; 'XMLHttpRequest'
+		],
+		'flash' =&gt; [
+			'env' =&gt; 'HTTP_USER_AGENT',
+			'pattern' =&gt; '/^(Shockwave|Adobe) Flash/'
+		],
+		'requested' =&gt; [
+			'param' =&gt; 'requested',
+			'value' =&gt; (int) 1
+		],
+		'json' =&gt; [
+			'accept' =&gt; [
+				[maximum depth reached]
+			],
+			'param' =&gt; '_ext',
+			'value' =&gt; 'json'
+		],
+		'xml' =&gt; [
+			'accept' =&gt; [
+				[maximum depth reached]
+			],
+			'param' =&gt; '_ext',
+			'value' =&gt; 'xml'
+		],
+		'mobile' =&gt; object(Closure) {},
+		'tablet' =&gt; object(Closure) {}
+	]
+	[protected] _detectorCache =&gt; []
+	[protected] stream =&gt; object(Zend\Diactoros\PhpInputStream) {
+		[protected] resource =&gt; resource
+		[protected] stream =&gt; 'php://input'
+		[private] cache =&gt; ''
+		[private] reachedEof =&gt; false
+	}
+	[protected] uri =&gt; object(Zend\Diactoros\Uri) {
+		base =&gt; ''
+		webroot =&gt; '/'
+		[protected] allowedSchemes =&gt; [
+			[maximum depth reached]
+		]
+		[private] scheme =&gt; 'https'
+		[private] userInfo =&gt; ''
+		[private] host =&gt; 'hoanghahcm.com'
+		[private] port =&gt; null
+		[private] path =&gt; '/img/icons/sidebar-toggle-icons.png'
+		[private] query =&gt; ''
+		[private] fragment =&gt; ''
+		[private] uriString =&gt; null
+	}
+	[protected] session =&gt; object(Cake\Network\Session) {
+		[protected] _engine =&gt; null
+		[protected] _started =&gt; null
+		[protected] _lifetime =&gt; '1440'
+		[protected] _isCLI =&gt; false
+	}
+	[protected] attributes =&gt; []
+	[protected] emulatedAttributes =&gt; [
+		(int) 0 =&gt; 'session',
+		(int) 1 =&gt; 'webroot',
+		(int) 2 =&gt; 'base',
+		(int) 3 =&gt; 'params'
+	]
+	[protected] uploadedFiles =&gt; []
+	[protected] protocol =&gt; null
+	[protected] requestTarget =&gt; null
+}
+object(Cake\Http\Response) {
+
+	'status' =&gt; (int) 200,
+	'contentType' =&gt; 'text/html',
+	'headers' =&gt; [
+		'Content-Type' =&gt; [
+			(int) 0 =&gt; 'text/html; charset=UTF-8'
+		]
+	],
+	'file' =&gt; null,
+	'fileRange' =&gt; [],
+	'cookies' =&gt; object(Cake\Http\Cookie\CookieCollection) {
+		[protected] cookies =&gt; [[maximum depth reached]]
+	},
+	'cacheDirectives' =&gt; [],
+	'body' =&gt; ''
+
+}</pre>
+</div>
+</div>
+<div id="stack-frame-9" style="display:none;" class="stack-details">
+<span class="stack-frame-file">/home/hoanghahcm/domains/hoanghahcm.com/public_html/vendor/cakephp/cakephp/src/Http/Runner.php</span>
+<a href="#" class="toggle-link stack-frame-args" data-target="stack-args-9">toggle arguments</a>
+<table class="code-excerpt" cellspacing="0" cellpadding="0">
+<tbody><tr>
+<td class="excerpt-number" data-number="60"></td>
+<td class="excerpt-line"><code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">{</span></span></code></td>
+</tr>
+<tr>
+<td class="excerpt-number" data-number="61"></td>
+<td class="excerpt-line"><code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$next&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">middleware</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">get</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">index</span><span style="color: #007700">);</span></span></code></td>
+</tr>
+<tr>
+<td class="excerpt-number" data-number="62"></td>
+<td class="excerpt-line"><code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">if&nbsp;(</span><span style="color: #0000BB">$next</span><span style="color: #007700">)&nbsp;{</span></span></code></td>
+</tr>
+<tr>
+<td class="excerpt-number" data-number="63"></td>
+<td class="excerpt-line"><code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">index</span><span style="color: #007700">++;</span></span></code></td>
+</tr>
+<tr>
+<td class="excerpt-number" data-number="64"></td>
+<td class="excerpt-line"><span class="code-highlight"><code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">return&nbsp;</span><span style="color: #0000BB">$next</span><span style="color: #007700">(</span><span style="color: #0000BB">$request</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$response</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">);</span></span></code></span></td>
+</tr>
+<tr>
+<td class="excerpt-number" data-number="65"></td>
+<td class="excerpt-line"><code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">}</span></span></code></td>
+</tr>
+<tr>
+<td class="excerpt-number" data-number="66"></td>
+<td class="excerpt-line"><code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;End&nbsp;of&nbsp;the&nbsp;queue</span></span></code></td>
+</tr>
+<tr>
+<td class="excerpt-number" data-number="67"></td>
+<td class="excerpt-line"><code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">return&nbsp;</span><span style="color: #0000BB">$response</span><span style="color: #007700">;</span></span></code></td>
+</tr>
+<tr>
+<td class="excerpt-number" data-number="68"></td>
+<td class="excerpt-line"><code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">}</span></span></code></td>
+</tr>
+</tbody></table>
+<div id="stack-args-9" style="display: none;">
+<pre>object(Cake\Http\ServerRequest) {
+	params =&gt; [
+		'plugin' =&gt; null,
+		'controller' =&gt; null,
+		'action' =&gt; null,
+		'_ext' =&gt; null,
+		'pass' =&gt; []
+	]
+	data =&gt; []
+	query =&gt; []
+	cookies =&gt; []
+	url =&gt; 'img/icons/sidebar-toggle-icons.png'
+	base =&gt; ''
+	webroot =&gt; '/'
+	here =&gt; '/img/icons/sidebar-toggle-icons.png'
+	trustProxy =&gt; false
+	[protected] _environment =&gt; [
+		'CONTEXT_DOCUMENT_ROOT' =&gt; '/home/hoanghahcm/domains/hoanghahcm.com/public_html',
+		'CONTEXT_PREFIX' =&gt; '',
+		'DOCUMENT_ROOT' =&gt; '/home/hoanghahcm/domains/hoanghahcm.com/public_html',
+		'GATEWAY_INTERFACE' =&gt; 'CGI/1.1',
+		'HTTP_ACCEPT' =&gt; 'text/html,image/png,image/jpeg,image/pjpeg,image/x-xbitmap,image/svg+xml,image/gif;q=0.9,*/*;q=0.1',
+		'HTTP_ACCEPT_ENCODING' =&gt; 'gzip',
+		'HTTP_ACCEPT_LANGUAGE' =&gt; 'en, *',
+		'HTTP_CDN_LOOP' =&gt; 'cloudflare',
+		'HTTP_CF_CONNECTING_IP' =&gt; '59.153.220.89',
+		'HTTP_CF_IPCOUNTRY' =&gt; 'VN',
+		'HTTP_CF_RAY' =&gt; '85c9b8ea4fab84c9-HKG',
+		'HTTP_CF_VISITOR' =&gt; '{"scheme":"https"}',
+		'HTTP_CONNECTION' =&gt; 'Keep-Alive',
+		'HTTP_HOST' =&gt; 'hoanghahcm.com',
+		'HTTP_REFERER' =&gt; 'http://hoanghahcm.com/css/corporate/style.css',
+		'HTTP_USER_AGENT' =&gt; 'Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)',
+		'HTTP_X_FORWARDED_FOR' =&gt; '59.153.220.89',
+		'HTTP_X_FORWARDED_PROTO' =&gt; 'https',
+		'PATH' =&gt; '/bin:/usr/bin',
+		'PHPRC' =&gt; '/usr/local/php56/lib/',
+		'PHP_INI_SCAN_DIR' =&gt; '/usr/local/directadmin/data/users/hoanghahcm/php/',
+		'QUERY_STRING' =&gt; '',
+		'REDIRECT_PHP_INI_SCAN_DIR' =&gt; '/usr/local/directadmin/data/users/hoanghahcm/php/',
+		'REDIRECT_REDIRECT_PHP_INI_SCAN_DIR' =&gt; '/usr/local/directadmin/data/users/hoanghahcm/php/',
+		'REDIRECT_REDIRECT_STATUS' =&gt; '200',
+		'REDIRECT_REDIRECT_UNIQUE_ID' =&gt; 'Zd9SFVk9PR8mmrZ336OX-QAAAXk',
+		'REDIRECT_REDIRECT_dont_vary' =&gt; '1',
+		'REDIRECT_REDIRECT_gzip_only_text_html' =&gt; '1',
+		'REDIRECT_REDIRECT_no_gzip' =&gt; '1',
+		'REDIRECT_STATUS' =&gt; '200',
+		'REDIRECT_UNIQUE_ID' =&gt; 'Zd9SFVk9PR8mmrZ336OX-QAAAXk',
+		'REDIRECT_URL' =&gt; '/webroot/img/icons/sidebar-toggle-icons.png',
+		'REDIRECT_dont_vary' =&gt; '1',
+		'REDIRECT_gzip_only_text_html' =&gt; '1',
+		'REDIRECT_no_gzip' =&gt; '1',
+		'REMOTE_ADDR' =&gt; '162.158.114.27',
+		'REMOTE_PORT' =&gt; '31102',
+		'REQUEST_METHOD' =&gt; 'GET',
+		'REQUEST_SCHEME' =&gt; 'http',
+		'REQUEST_URI' =&gt; '/img/icons/sidebar-toggle-icons.png',
+		'SCRIPT_FILENAME' =&gt; '/home/hoanghahcm/domains/hoanghahcm.com/public_html/webroot/index.php',
+		'SCRIPT_NAME' =&gt; '/webroot/index.php',
+		'SERVER_ADDR' =&gt; '45.117.171.159',
+		'SERVER_ADMIN' =&gt; '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="017664636c607275647341696e606f66696069626c2f626e6c">[email&nbsp;protected]</a>',
+		'SERVER_NAME' =&gt; 'hoanghahcm.com',
+		'SERVER_PORT' =&gt; '80',
+		'SERVER_PROTOCOL' =&gt; 'HTTP/1.1',
+		'SERVER_SIGNATURE' =&gt; '',
+		'SERVER_SOFTWARE' =&gt; 'Apache/2',
+		'UNIQUE_ID' =&gt; 'Zd9SFVk9PR8mmrZ336OX-QAAAXk',
+		'gzip_only_text_html' =&gt; '1',
+		'PHP_SELF' =&gt; '/webroot/index.php',
+		'REQUEST_TIME_FLOAT' =&gt; (float) 1709134357.9456,
+		'REQUEST_TIME' =&gt; (int) 1709134357,
+		'ORIGINAL_REQUEST_METHOD' =&gt; 'GET'
+	]
+	[protected] _input =&gt; null
+	[protected] _detectors =&gt; [
+		'get' =&gt; [
+			'env' =&gt; 'REQUEST_METHOD',
+			'value' =&gt; 'GET'
+		],
+		'post' =&gt; [
+			'env' =&gt; 'REQUEST_METHOD',
+			'value' =&gt; 'POST'
+		],
+		'put' =&gt; [
+			'env' =&gt; 'REQUEST_METHOD',
+			'value' =&gt; 'PUT'
+		],
+		'patch' =&gt; [
+			'env' =&gt; 'REQUEST_METHOD',
+			'value' =&gt; 'PATCH'
+		],
+		'delete' =&gt; [
+			'env' =&gt; 'REQUEST_METHOD',
+			'value' =&gt; 'DELETE'
+		],
+		'head' =&gt; [
+			'env' =&gt; 'REQUEST_METHOD',
+			'value' =&gt; 'HEAD'
+		],
+		'options' =&gt; [
+			'env' =&gt; 'REQUEST_METHOD',
+			'value' =&gt; 'OPTIONS'
+		],
+		'ssl' =&gt; [
+			'env' =&gt; 'HTTPS',
+			'options' =&gt; [
+				[maximum depth reached]
+			]
+		],
+		'ajax' =&gt; [
+			'env' =&gt; 'HTTP_X_REQUESTED_WITH',
+			'value' =&gt; 'XMLHttpRequest'
+		],
+		'flash' =&gt; [
+			'env' =&gt; 'HTTP_USER_AGENT',
+			'pattern' =&gt; '/^(Shockwave|Adobe) Flash/'
+		],
+		'requested' =&gt; [
+			'param' =&gt; 'requested',
+			'value' =&gt; (int) 1
+		],
+		'json' =&gt; [
+			'accept' =&gt; [
+				[maximum depth reached]
+			],
+			'param' =&gt; '_ext',
+			'value' =&gt; 'json'
+		],
+		'xml' =&gt; [
+			'accept' =&gt; [
+				[maximum depth reached]
+			],
+			'param' =&gt; '_ext',
+			'value' =&gt; 'xml'
+		],
+		'mobile' =&gt; object(Closure) {},
+		'tablet' =&gt; object(Closure) {}
+	]
+	[protected] _detectorCache =&gt; []
+	[protected] stream =&gt; object(Zend\Diactoros\PhpInputStream) {
+		[protected] resource =&gt; resource
+		[protected] stream =&gt; 'php://input'
+		[private] cache =&gt; ''
+		[private] reachedEof =&gt; false
+	}
+	[protected] uri =&gt; object(Zend\Diactoros\Uri) {
+		base =&gt; ''
+		webroot =&gt; '/'
+		[protected] allowedSchemes =&gt; [
+			[maximum depth reached]
+		]
+		[private] scheme =&gt; 'https'
+		[private] userInfo =&gt; ''
+		[private] host =&gt; 'hoanghahcm.com'
+		[private] port =&gt; null
+		[private] path =&gt; '/img/icons/sidebar-toggle-icons.png'
+		[private] query =&gt; ''
+		[private] fragment =&gt; ''
+		[private] uriString =&gt; null
+	}
+	[protected] session =&gt; object(Cake\Network\Session) {
+		[protected] _engine =&gt; null
+		[protected] _started =&gt; null
+		[protected] _lifetime =&gt; '1440'
+		[protected] _isCLI =&gt; false
+	}
+	[protected] attributes =&gt; []
+	[protected] emulatedAttributes =&gt; [
+		(int) 0 =&gt; 'session',
+		(int) 1 =&gt; 'webroot',
+		(int) 2 =&gt; 'base',
+		(int) 3 =&gt; 'params'
+	]
+	[protected] uploadedFiles =&gt; []
+	[protected] protocol =&gt; null
+	[protected] requestTarget =&gt; null
+}
+object(Cake\Http\Response) {
+
+	'status' =&gt; (int) 200,
+	'contentType' =&gt; 'text/html',
+	'headers' =&gt; [
+		'Content-Type' =&gt; [
+			(int) 0 =&gt; 'text/html; charset=UTF-8'
+		]
+	],
+	'file' =&gt; null,
+	'fileRange' =&gt; [],
+	'cookies' =&gt; object(Cake\Http\Cookie\CookieCollection) {
+		[protected] cookies =&gt; [[maximum depth reached]]
+	},
+	'cacheDirectives' =&gt; [],
+	'body' =&gt; ''
+
+}
+object(Cake\Http\Runner) {
+	[protected] index =&gt; (int) 4
+	[protected] middleware =&gt; object(Cake\Http\MiddlewareQueue) {
+		[protected] queue =&gt; [
+			[maximum depth reached]
+		]
+		[protected] callables =&gt; [
+			[maximum depth reached]
+		]
+	}
+}</pre>
+</div>
+</div>
+<div id="stack-frame-10" style="display:none;" class="stack-details">
+<span class="stack-frame-file">/home/hoanghahcm/domains/hoanghahcm.com/public_html/vendor/cakephp/cakephp/src/Http/Runner.php</span>
+<a href="#" class="toggle-link stack-frame-args" data-target="stack-args-10">toggle arguments</a>
+<table class="code-excerpt" cellspacing="0" cellpadding="0">
+<tbody><tr>
+<td class="excerpt-number" data-number="47"></td>
+<td class="excerpt-line"><code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">{</span></span></code></td>
+</tr>
+<tr>
+<td class="excerpt-number" data-number="48"></td>
+<td class="excerpt-line"><code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">middleware&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$middleware</span><span style="color: #007700">;</span></span></code></td>
+</tr>
+<tr>
+<td class="excerpt-number" data-number="49"></td>
+<td class="excerpt-line"><code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">index&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">0</span><span style="color: #007700">;</span></span></code></td>
+</tr>
+<tr>
+<td class="excerpt-number" data-number="50"></td>
+<td class="excerpt-line"><code><span style="color: #000000"><span style="color: #0000BB"></span></span></code></td>
+</tr>
+<tr>
+<td class="excerpt-number" data-number="51"></td>
+<td class="excerpt-line"><span class="code-highlight"><code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">__invoke</span><span style="color: #007700">(</span><span style="color: #0000BB">$request</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$response</span><span style="color: #007700">);</span></span></code></span></td>
+</tr>
+<tr>
+<td class="excerpt-number" data-number="52"></td>
+<td class="excerpt-line"><code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">}</span></span></code></td>
+</tr>
+<tr>
+<td class="excerpt-number" data-number="53"></td>
+<td class="excerpt-line"><code><span style="color: #000000"><span style="color: #0000BB"></span></span></code></td>
+</tr>
+<tr>
+<td class="excerpt-number" data-number="54"></td>
+<td class="excerpt-line"><code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">/**</span></span></code></td>
+</tr>
+<tr>
+<td class="excerpt-number" data-number="55"></td>
+<td class="excerpt-line"><code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">*&nbsp;@</span><span style="color: #0000BB">param&nbsp;</span><span style="color: #007700">\</span><span style="color: #0000BB">Psr</span><span style="color: #007700">\</span><span style="color: #0000BB">Http</span><span style="color: #007700">\</span><span style="color: #0000BB">Message</span><span style="color: #007700">\</span><span style="color: #0000BB">ServerRequestInterface&nbsp;$request&nbsp;The&nbsp;server&nbsp;request</span></span></code></td>
+</tr>
+</tbody></table>
+<div id="stack-args-10" style="display: none;">
+<pre>object(Cake\Http\ServerRequest) {
+	params =&gt; [
+		'plugin' =&gt; null,
+		'controller' =&gt; null,
+		'action' =&gt; null,
+		'_ext' =&gt; null,
+		'pass' =&gt; []
+	]
+	data =&gt; []
+	query =&gt; []
+	cookies =&gt; []
+	url =&gt; 'img/icons/sidebar-toggle-icons.png'
+	base =&gt; ''
+	webroot =&gt; '/'
+	here =&gt; '/img/icons/sidebar-toggle-icons.png'
+	trustProxy =&gt; false
+	[protected] _environment =&gt; [
+		'CONTEXT_DOCUMENT_ROOT' =&gt; '/home/hoanghahcm/domains/hoanghahcm.com/public_html',
+		'CONTEXT_PREFIX' =&gt; '',
+		'DOCUMENT_ROOT' =&gt; '/home/hoanghahcm/domains/hoanghahcm.com/public_html',
+		'GATEWAY_INTERFACE' =&gt; 'CGI/1.1',
+		'HTTP_ACCEPT' =&gt; 'text/html,image/png,image/jpeg,image/pjpeg,image/x-xbitmap,image/svg+xml,image/gif;q=0.9,*/*;q=0.1',
+		'HTTP_ACCEPT_ENCODING' =&gt; 'gzip',
+		'HTTP_ACCEPT_LANGUAGE' =&gt; 'en, *',
+		'HTTP_CDN_LOOP' =&gt; 'cloudflare',
+		'HTTP_CF_CONNECTING_IP' =&gt; '59.153.220.89',
+		'HTTP_CF_IPCOUNTRY' =&gt; 'VN',
+		'HTTP_CF_RAY' =&gt; '85c9b8ea4fab84c9-HKG',
+		'HTTP_CF_VISITOR' =&gt; '{"scheme":"https"}',
+		'HTTP_CONNECTION' =&gt; 'Keep-Alive',
+		'HTTP_HOST' =&gt; 'hoanghahcm.com',
+		'HTTP_REFERER' =&gt; 'http://hoanghahcm.com/css/corporate/style.css',
+		'HTTP_USER_AGENT' =&gt; 'Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)',
+		'HTTP_X_FORWARDED_FOR' =&gt; '59.153.220.89',
+		'HTTP_X_FORWARDED_PROTO' =&gt; 'https',
+		'PATH' =&gt; '/bin:/usr/bin',
+		'PHPRC' =&gt; '/usr/local/php56/lib/',
+		'PHP_INI_SCAN_DIR' =&gt; '/usr/local/directadmin/data/users/hoanghahcm/php/',
+		'QUERY_STRING' =&gt; '',
+		'REDIRECT_PHP_INI_SCAN_DIR' =&gt; '/usr/local/directadmin/data/users/hoanghahcm/php/',
+		'REDIRECT_REDIRECT_PHP_INI_SCAN_DIR' =&gt; '/usr/local/directadmin/data/users/hoanghahcm/php/',
+		'REDIRECT_REDIRECT_STATUS' =&gt; '200',
+		'REDIRECT_REDIRECT_UNIQUE_ID' =&gt; 'Zd9SFVk9PR8mmrZ336OX-QAAAXk',
+		'REDIRECT_REDIRECT_dont_vary' =&gt; '1',
+		'REDIRECT_REDIRECT_gzip_only_text_html' =&gt; '1',
+		'REDIRECT_REDIRECT_no_gzip' =&gt; '1',
+		'REDIRECT_STATUS' =&gt; '200',
+		'REDIRECT_UNIQUE_ID' =&gt; 'Zd9SFVk9PR8mmrZ336OX-QAAAXk',
+		'REDIRECT_URL' =&gt; '/webroot/img/icons/sidebar-toggle-icons.png',
+		'REDIRECT_dont_vary' =&gt; '1',
+		'REDIRECT_gzip_only_text_html' =&gt; '1',
+		'REDIRECT_no_gzip' =&gt; '1',
+		'REMOTE_ADDR' =&gt; '162.158.114.27',
+		'REMOTE_PORT' =&gt; '31102',
+		'REQUEST_METHOD' =&gt; 'GET',
+		'REQUEST_SCHEME' =&gt; 'http',
+		'REQUEST_URI' =&gt; '/img/icons/sidebar-toggle-icons.png',
+		'SCRIPT_FILENAME' =&gt; '/home/hoanghahcm/domains/hoanghahcm.com/public_html/webroot/index.php',
+		'SCRIPT_NAME' =&gt; '/webroot/index.php',
+		'SERVER_ADDR' =&gt; '45.117.171.159',
+		'SERVER_ADMIN' =&gt; '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="bec9dbdcd3dfcdcadbccfed6d1dfd0d9d6dfd6ddd390ddd1d3">[email&nbsp;protected]</a>',
+		'SERVER_NAME' =&gt; 'hoanghahcm.com',
+		'SERVER_PORT' =&gt; '80',
+		'SERVER_PROTOCOL' =&gt; 'HTTP/1.1',
+		'SERVER_SIGNATURE' =&gt; '',
+		'SERVER_SOFTWARE' =&gt; 'Apache/2',
+		'UNIQUE_ID' =&gt; 'Zd9SFVk9PR8mmrZ336OX-QAAAXk',
+		'gzip_only_text_html' =&gt; '1',
+		'PHP_SELF' =&gt; '/webroot/index.php',
+		'REQUEST_TIME_FLOAT' =&gt; (float) 1709134357.9456,
+		'REQUEST_TIME' =&gt; (int) 1709134357,
+		'ORIGINAL_REQUEST_METHOD' =&gt; 'GET'
+	]
+	[protected] _input =&gt; null
+	[protected] _detectors =&gt; [
+		'get' =&gt; [
+			'env' =&gt; 'REQUEST_METHOD',
+			'value' =&gt; 'GET'
+		],
+		'post' =&gt; [
+			'env' =&gt; 'REQUEST_METHOD',
+			'value' =&gt; 'POST'
+		],
+		'put' =&gt; [
+			'env' =&gt; 'REQUEST_METHOD',
+			'value' =&gt; 'PUT'
+		],
+		'patch' =&gt; [
+			'env' =&gt; 'REQUEST_METHOD',
+			'value' =&gt; 'PATCH'
+		],
+		'delete' =&gt; [
+			'env' =&gt; 'REQUEST_METHOD',
+			'value' =&gt; 'DELETE'
+		],
+		'head' =&gt; [
+			'env' =&gt; 'REQUEST_METHOD',
+			'value' =&gt; 'HEAD'
+		],
+		'options' =&gt; [
+			'env' =&gt; 'REQUEST_METHOD',
+			'value' =&gt; 'OPTIONS'
+		],
+		'ssl' =&gt; [
+			'env' =&gt; 'HTTPS',
+			'options' =&gt; [
+				[maximum depth reached]
+			]
+		],
+		'ajax' =&gt; [
+			'env' =&gt; 'HTTP_X_REQUESTED_WITH',
+			'value' =&gt; 'XMLHttpRequest'
+		],
+		'flash' =&gt; [
+			'env' =&gt; 'HTTP_USER_AGENT',
+			'pattern' =&gt; '/^(Shockwave|Adobe) Flash/'
+		],
+		'requested' =&gt; [
+			'param' =&gt; 'requested',
+			'value' =&gt; (int) 1
+		],
+		'json' =&gt; [
+			'accept' =&gt; [
+				[maximum depth reached]
+			],
+			'param' =&gt; '_ext',
+			'value' =&gt; 'json'
+		],
+		'xml' =&gt; [
+			'accept' =&gt; [
+				[maximum depth reached]
+			],
+			'param' =&gt; '_ext',
+			'value' =&gt; 'xml'
+		],
+		'mobile' =&gt; object(Closure) {},
+		'tablet' =&gt; object(Closure) {}
+	]
+	[protected] _detectorCache =&gt; []
+	[protected] stream =&gt; object(Zend\Diactoros\PhpInputStream) {
+		[protected] resource =&gt; resource
+		[protected] stream =&gt; 'php://input'
+		[private] cache =&gt; ''
+		[private] reachedEof =&gt; false
+	}
+	[protected] uri =&gt; object(Zend\Diactoros\Uri) {
+		base =&gt; ''
+		webroot =&gt; '/'
+		[protected] allowedSchemes =&gt; [
+			[maximum depth reached]
+		]
+		[private] scheme =&gt; 'https'
+		[private] userInfo =&gt; ''
+		[private] host =&gt; 'hoanghahcm.com'
+		[private] port =&gt; null
+		[private] path =&gt; '/img/icons/sidebar-toggle-icons.png'
+		[private] query =&gt; ''
+		[private] fragment =&gt; ''
+		[private] uriString =&gt; null
+	}
+	[protected] session =&gt; object(Cake\Network\Session) {
+		[protected] _engine =&gt; null
+		[protected] _started =&gt; null
+		[protected] _lifetime =&gt; '1440'
+		[protected] _isCLI =&gt; false
+	}
+	[protected] attributes =&gt; []
+	[protected] emulatedAttributes =&gt; [
+		(int) 0 =&gt; 'session',
+		(int) 1 =&gt; 'webroot',
+		(int) 2 =&gt; 'base',
+		(int) 3 =&gt; 'params'
+	]
+	[protected] uploadedFiles =&gt; []
+	[protected] protocol =&gt; null
+	[protected] requestTarget =&gt; null
+}
+object(Cake\Http\Response) {
+
+	'status' =&gt; (int) 200,
+	'contentType' =&gt; 'text/html',
+	'headers' =&gt; [
+		'Content-Type' =&gt; [
+			(int) 0 =&gt; 'text/html; charset=UTF-8'
+		]
+	],
+	'file' =&gt; null,
+	'fileRange' =&gt; [],
+	'cookies' =&gt; object(Cake\Http\Cookie\CookieCollection) {
+		[protected] cookies =&gt; [[maximum depth reached]]
+	},
+	'cacheDirectives' =&gt; [],
+	'body' =&gt; ''
+
+}</pre>
+</div>
+</div>
+<div id="stack-frame-11" style="display:none;" class="stack-details">
+<span class="stack-frame-file">/home/hoanghahcm/domains/hoanghahcm.com/public_html/vendor/cakephp/cakephp/src/Http/Server.php</span>
+<a href="#" class="toggle-link stack-frame-args" data-target="stack-args-11">toggle arguments</a>
+<table class="code-excerpt" cellspacing="0" cellpadding="0">
+<tbody><tr>
+<td class="excerpt-number" data-number="76"></td>
+<td class="excerpt-line"><code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">throw&nbsp;new&nbsp;</span><span style="color: #0000BB">RuntimeException</span><span style="color: #007700">(</span><span style="color: #DD0000">'The&nbsp;application&nbsp;`middleware`&nbsp;method&nbsp;did&nbsp;not&nbsp;return&nbsp;a&nbsp;middleware&nbsp;queue.'</span><span style="color: #007700">);</span></span></code></td>
+</tr>
+<tr>
+<td class="excerpt-number" data-number="77"></td>
+<td class="excerpt-line"><code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">}</span></span></code></td>
+</tr>
+<tr>
+<td class="excerpt-number" data-number="78"></td>
+<td class="excerpt-line"><code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">dispatchEvent</span><span style="color: #007700">(</span><span style="color: #DD0000">'Server.buildMiddleware'</span><span style="color: #007700">,&nbsp;[</span><span style="color: #DD0000">'middleware'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$middleware</span><span style="color: #007700">]);</span></span></code></td>
+</tr>
+<tr>
+<td class="excerpt-number" data-number="79"></td>
+<td class="excerpt-line"><code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$middleware</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">add</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">app</span><span style="color: #007700">);</span></span></code></td>
+</tr>
+<tr>
+<td class="excerpt-number" data-number="80"></td>
+<td class="excerpt-line"><span class="code-highlight"><code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$response&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">runner</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">run</span><span style="color: #007700">(</span><span style="color: #0000BB">$middleware</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$request</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$response</span><span style="color: #007700">);</span></span></code></span></td>
+</tr>
+<tr>
+<td class="excerpt-number" data-number="81"></td>
+<td class="excerpt-line"><code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">if&nbsp;(!(</span><span style="color: #0000BB">$response&nbsp;</span><span style="color: #007700">instanceof&nbsp;</span><span style="color: #0000BB">ResponseInterface</span><span style="color: #007700">))&nbsp;{</span></span></code></td>
+</tr>
+<tr>
+<td class="excerpt-number" data-number="82"></td>
+<td class="excerpt-line"><code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">throw&nbsp;new&nbsp;</span><span style="color: #0000BB">RuntimeException</span><span style="color: #007700">(</span><span style="color: #0000BB">sprintf</span><span style="color: #007700">(</span></span></code></td>
+</tr>
+<tr>
+<td class="excerpt-number" data-number="83"></td>
+<td class="excerpt-line"><code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'Application&nbsp;did&nbsp;not&nbsp;create&nbsp;a&nbsp;response.&nbsp;Got&nbsp;"%s"&nbsp;instead.'</span><span style="color: #007700">,</span></span></code></td>
+</tr>
+<tr>
+<td class="excerpt-number" data-number="84"></td>
+<td class="excerpt-line"><code><span style="color: #000000"><span style="color: #0000BB">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;is_object</span><span style="color: #007700">(</span><span style="color: #0000BB">$response</span><span style="color: #007700">)&nbsp;?&nbsp;</span><span style="color: #0000BB">get_class</span><span style="color: #007700">(</span><span style="color: #0000BB">$response</span><span style="color: #007700">)&nbsp;:&nbsp;</span><span style="color: #0000BB">$response</span></span></code></td>
+</tr>
+</tbody></table>
+<div id="stack-args-11" style="display: none;">
+<pre>object(Cake\Http\MiddlewareQueue) {
+	[protected] queue =&gt; [
+		(int) 0 =&gt; object(Cake\Error\Middleware\ErrorHandlerMiddleware) {},
+		(int) 1 =&gt; object(Cake\Routing\Middleware\AssetMiddleware) {},
+		(int) 2 =&gt; object(Cake\Routing\Middleware\RoutingMiddleware) {},
+		(int) 3 =&gt; object(App\Application) {}
+	]
+	[protected] callables =&gt; [
+		(int) 0 =&gt; object(Cake\Error\Middleware\ErrorHandlerMiddleware) {},
+		(int) 1 =&gt; object(Cake\Routing\Middleware\AssetMiddleware) {},
+		(int) 2 =&gt; object(Cake\Routing\Middleware\RoutingMiddleware) {},
+		(int) 3 =&gt; object(App\Application) {}
+	]
+}
+object(Cake\Http\ServerRequest) {
+	params =&gt; [
+		'plugin' =&gt; null,
+		'controller' =&gt; null,
+		'action' =&gt; null,
+		'_ext' =&gt; null,
+		'pass' =&gt; []
+	]
+	data =&gt; []
+	query =&gt; []
+	cookies =&gt; []
+	url =&gt; 'img/icons/sidebar-toggle-icons.png'
+	base =&gt; ''
+	webroot =&gt; '/'
+	here =&gt; '/img/icons/sidebar-toggle-icons.png'
+	trustProxy =&gt; false
+	[protected] _environment =&gt; [
+		'CONTEXT_DOCUMENT_ROOT' =&gt; '/home/hoanghahcm/domains/hoanghahcm.com/public_html',
+		'CONTEXT_PREFIX' =&gt; '',
+		'DOCUMENT_ROOT' =&gt; '/home/hoanghahcm/domains/hoanghahcm.com/public_html',
+		'GATEWAY_INTERFACE' =&gt; 'CGI/1.1',
+		'HTTP_ACCEPT' =&gt; 'text/html,image/png,image/jpeg,image/pjpeg,image/x-xbitmap,image/svg+xml,image/gif;q=0.9,*/*;q=0.1',
+		'HTTP_ACCEPT_ENCODING' =&gt; 'gzip',
+		'HTTP_ACCEPT_LANGUAGE' =&gt; 'en, *',
+		'HTTP_CDN_LOOP' =&gt; 'cloudflare',
+		'HTTP_CF_CONNECTING_IP' =&gt; '59.153.220.89',
+		'HTTP_CF_IPCOUNTRY' =&gt; 'VN',
+		'HTTP_CF_RAY' =&gt; '85c9b8ea4fab84c9-HKG',
+		'HTTP_CF_VISITOR' =&gt; '{"scheme":"https"}',
+		'HTTP_CONNECTION' =&gt; 'Keep-Alive',
+		'HTTP_HOST' =&gt; 'hoanghahcm.com',
+		'HTTP_REFERER' =&gt; 'http://hoanghahcm.com/css/corporate/style.css',
+		'HTTP_USER_AGENT' =&gt; 'Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)',
+		'HTTP_X_FORWARDED_FOR' =&gt; '59.153.220.89',
+		'HTTP_X_FORWARDED_PROTO' =&gt; 'https',
+		'PATH' =&gt; '/bin:/usr/bin',
+		'PHPRC' =&gt; '/usr/local/php56/lib/',
+		'PHP_INI_SCAN_DIR' =&gt; '/usr/local/directadmin/data/users/hoanghahcm/php/',
+		'QUERY_STRING' =&gt; '',
+		'REDIRECT_PHP_INI_SCAN_DIR' =&gt; '/usr/local/directadmin/data/users/hoanghahcm/php/',
+		'REDIRECT_REDIRECT_PHP_INI_SCAN_DIR' =&gt; '/usr/local/directadmin/data/users/hoanghahcm/php/',
+		'REDIRECT_REDIRECT_STATUS' =&gt; '200',
+		'REDIRECT_REDIRECT_UNIQUE_ID' =&gt; 'Zd9SFVk9PR8mmrZ336OX-QAAAXk',
+		'REDIRECT_REDIRECT_dont_vary' =&gt; '1',
+		'REDIRECT_REDIRECT_gzip_only_text_html' =&gt; '1',
+		'REDIRECT_REDIRECT_no_gzip' =&gt; '1',
+		'REDIRECT_STATUS' =&gt; '200',
+		'REDIRECT_UNIQUE_ID' =&gt; 'Zd9SFVk9PR8mmrZ336OX-QAAAXk',
+		'REDIRECT_URL' =&gt; '/webroot/img/icons/sidebar-toggle-icons.png',
+		'REDIRECT_dont_vary' =&gt; '1',
+		'REDIRECT_gzip_only_text_html' =&gt; '1',
+		'REDIRECT_no_gzip' =&gt; '1',
+		'REMOTE_ADDR' =&gt; '162.158.114.27',
+		'REMOTE_PORT' =&gt; '31102',
+		'REQUEST_METHOD' =&gt; 'GET',
+		'REQUEST_SCHEME' =&gt; 'http',
+		'REQUEST_URI' =&gt; '/img/icons/sidebar-toggle-icons.png',
+		'SCRIPT_FILENAME' =&gt; '/home/hoanghahcm/domains/hoanghahcm.com/public_html/webroot/index.php',
+		'SCRIPT_NAME' =&gt; '/webroot/index.php',
+		'SERVER_ADDR' =&gt; '45.117.171.159',
+		'SERVER_ADMIN' =&gt; '<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="364153545b5745425344765e595758515e575e555b1855595b">[email&nbsp;protected]</a>',
+		'SERVER_NAME' =&gt; 'hoanghahcm.com',
+		'SERVER_PORT' =&gt; '80',
+		'SERVER_PROTOCOL' =&gt; 'HTTP/1.1',
+		'SERVER_SIGNATURE' =&gt; '',
+		'SERVER_SOFTWARE' =&gt; 'Apache/2',
+		'UNIQUE_ID' =&gt; 'Zd9SFVk9PR8mmrZ336OX-QAAAXk',
+		'gzip_only_text_html' =&gt; '1',
+		'PHP_SELF' =&gt; '/webroot/index.php',
+		'REQUEST_TIME_FLOAT' =&gt; (float) 1709134357.9456,
+		'REQUEST_TIME' =&gt; (int) 1709134357,
+		'ORIGINAL_REQUEST_METHOD' =&gt; 'GET'
+	]
+	[protected] _input =&gt; null
+	[protected] _detectors =&gt; [
+		'get' =&gt; [
+			'env' =&gt; 'REQUEST_METHOD',
+			'value' =&gt; 'GET'
+		],
+		'post' =&gt; [
+			'env' =&gt; 'REQUEST_METHOD',
+			'value' =&gt; 'POST'
+		],
+		'put' =&gt; [
+			'env' =&gt; 'REQUEST_METHOD',
+			'value' =&gt; 'PUT'
+		],
+		'patch' =&gt; [
+			'env' =&gt; 'REQUEST_METHOD',
+			'value' =&gt; 'PATCH'
+		],
+		'delete' =&gt; [
+			'env' =&gt; 'REQUEST_METHOD',
+			'value' =&gt; 'DELETE'
+		],
+		'head' =&gt; [
+			'env' =&gt; 'REQUEST_METHOD',
+			'value' =&gt; 'HEAD'
+		],
+		'options' =&gt; [
+			'env' =&gt; 'REQUEST_METHOD',
+			'value' =&gt; 'OPTIONS'
+		],
+		'ssl' =&gt; [
+			'env' =&gt; 'HTTPS',
+			'options' =&gt; [
+				[maximum depth reached]
+			]
+		],
+		'ajax' =&gt; [
+			'env' =&gt; 'HTTP_X_REQUESTED_WITH',
+			'value' =&gt; 'XMLHttpRequest'
+		],
+		'flash' =&gt; [
+			'env' =&gt; 'HTTP_USER_AGENT',
+			'pattern' =&gt; '/^(Shockwave|Adobe) Flash/'
+		],
+		'requested' =&gt; [
+			'param' =&gt; 'requested',
+			'value' =&gt; (int) 1
+		],
+		'json' =&gt; [
+			'accept' =&gt; [
+				[maximum depth reached]
+			],
+			'param' =&gt; '_ext',
+			'value' =&gt; 'json'
+		],
+		'xml' =&gt; [
+			'accept' =&gt; [
+				[maximum depth reached]
+			],
+			'param' =&gt; '_ext',
+			'value' =&gt; 'xml'
+		],
+		'mobile' =&gt; object(Closure) {},
+		'tablet' =&gt; object(Closure) {}
+	]
+	[protected] _detectorCache =&gt; []
+	[protected] stream =&gt; object(Zend\Diactoros\PhpInputStream) {
+		[protected] resource =&gt; resource
+		[protected] stream =&gt; 'php://input'
+		[private] cache =&gt; ''
+		[private] reachedEof =&gt; false
+	}
+	[protected] uri =&gt; object(Zend\Diactoros\Uri) {
+		base =&gt; ''
+		webroot =&gt; '/'
+		[protected] allowedSchemes =&gt; [
+			[maximum depth reached]
+		]
+		[private] scheme =&gt; 'https'
+		[private] userInfo =&gt; ''
+		[private] host =&gt; 'hoanghahcm.com'
+		[private] port =&gt; null
+		[private] path =&gt; '/img/icons/sidebar-toggle-icons.png'
+		[private] query =&gt; ''
+		[private] fragment =&gt; ''
+		[private] uriString =&gt; null
+	}
+	[protected] session =&gt; object(Cake\Network\Session) {
+		[protected] _engine =&gt; null
+		[protected] _started =&gt; null
+		[protected] _lifetime =&gt; '1440'
+		[protected] _isCLI =&gt; false
+	}
+	[protected] attributes =&gt; []
+	[protected] emulatedAttributes =&gt; [
+		(int) 0 =&gt; 'session',
+		(int) 1 =&gt; 'webroot',
+		(int) 2 =&gt; 'base',
+		(int) 3 =&gt; 'params'
+	]
+	[protected] uploadedFiles =&gt; []
+	[protected] protocol =&gt; null
+	[protected] requestTarget =&gt; null
+}
+object(Cake\Http\Response) {
+
+	'status' =&gt; (int) 200,
+	'contentType' =&gt; 'text/html',
+	'headers' =&gt; [
+		'Content-Type' =&gt; [
+			(int) 0 =&gt; 'text/html; charset=UTF-8'
+		]
+	],
+	'file' =&gt; null,
+	'fileRange' =&gt; [],
+	'cookies' =&gt; object(Cake\Http\Cookie\CookieCollection) {
+		[protected] cookies =&gt; [[maximum depth reached]]
+	},
+	'cacheDirectives' =&gt; [],
+	'body' =&gt; ''
+
+}</pre>
+</div>
+</div>
+<div id="stack-frame-12" style="display:none;" class="stack-details">
+<span class="stack-frame-file">/home/hoanghahcm/domains/hoanghahcm.com/public_html/webroot/index.php</span>
+<a href="#" class="toggle-link stack-frame-args" data-target="stack-args-12">toggle arguments</a>
+<table class="code-excerpt" cellspacing="0" cellpadding="0">
+<tbody><tr>
+<td class="excerpt-number" data-number="31"></td>
+<td class="excerpt-line"><code><span style="color: #000000"><span style="color: #0000BB">$server&nbsp;</span><span style="color: #007700">=&nbsp;new&nbsp;</span><span style="color: #0000BB">Server</span><span style="color: #007700">(new&nbsp;</span><span style="color: #0000BB">Application</span><span style="color: #007700">(</span><span style="color: #0000BB">dirname</span><span style="color: #007700">(</span><span style="color: #0000BB">__DIR__</span><span style="color: #007700">)&nbsp;.&nbsp;</span><span style="color: #DD0000">'/config'</span><span style="color: #007700">));</span></span></code></td>
+</tr>
+<tr>
+<td class="excerpt-number" data-number="32"></td>
+<td class="excerpt-line"><code><span style="color: #000000"><span style="color: #0000BB"></span></span></code></td>
+</tr>
+<tr>
+<td class="excerpt-number" data-number="33"></td>
+<td class="excerpt-line"><code><span style="color: #000000"><span style="color: #0000BB"></span><span style="color: #FF8000">//&nbsp;Run&nbsp;the&nbsp;request/response&nbsp;through&nbsp;the&nbsp;application</span></span></code></td>
+</tr>
+<tr>
+<td class="excerpt-number" data-number="34"></td>
+<td class="excerpt-line"><code><span style="color: #000000"><span style="color: #0000BB"></span><span style="color: #FF8000">//&nbsp;and&nbsp;emit&nbsp;the&nbsp;response.</span></span></code></td>
+</tr>
+<tr>
+<td class="excerpt-number" data-number="35"></td>
+<td class="excerpt-line"><span class="code-highlight"><code><span style="color: #000000"><span style="color: #0000BB">$server</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">emit</span><span style="color: #007700">(</span><span style="color: #0000BB">$server</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">run</span><span style="color: #007700">());</span></span></code></span></td>
+</tr>
+<tr>
+<td class="excerpt-number" data-number="36"></td>
+<td class="excerpt-line"><code><span style="color: #000000"><span style="color: #0000BB"></span></span></code></td>
+</tr>
+</tbody></table>
+<div id="stack-args-12" style="display: none;">
+<pre>No arguments</pre>
+</div>
+</div>
+<div class="error-suggestion">
+<p>
+In the case you tried to access a plugin controller make sure you added it to your composer file or you use the autoload option for the plugin.
+</p>
+<p class="error">
+<strong>Error: </strong>
+Create the class <em>ImgController</em> below in file: src/Controller/ImgController.php </p>
+<div class="code-dump"><code><span style="color: #000000">
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #0000BB">&lt;?php<br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">namespace&nbsp;</span><span style="color: #0000BB">App</span><span style="color: #007700">\</span><span style="color: #0000BB">Controller</span><span style="color: #007700">;<br><br>&nbsp;&nbsp;&nbsp;&nbsp;use&nbsp;</span><span style="color: #0000BB">App</span><span style="color: #007700">\</span><span style="color: #0000BB">Controller</span><span style="color: #007700">\</span><span style="color: #0000BB">AppController</span><span style="color: #007700">;<br><br>&nbsp;&nbsp;&nbsp;&nbsp;class&nbsp;</span><span style="color: #0000BB">ImgController&nbsp;</span><span style="color: #007700">extends&nbsp;</span><span style="color: #0000BB">AppController<br>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">{<br><br>&nbsp;&nbsp;&nbsp;&nbsp;}</span>
+</span>
+</code></div>
+</div>
+<p class="customize">
+If you want to customize this error message, create
+<em>src/Template/Error/missing_controller.ctp</em>
+</p>
+</div>
+<div class="error-nav">
+<a href="#" class="toggle-link toggle-vendor-frames">toggle vendor stack frames</a>
+<ul class="stack-trace">
+<li class="stack-frame vendor-frame">
+<a href="#" data-target="stack-frame-0">
+<span class="stack-function">⟩ Cake\Http\ControllerFactory-&gt;missingController</span>
+<span class="stack-file">
+CORE/src/Http/ControllerFactory.php, line 38 </span>
+</a>
+</li>
+<li class="stack-frame vendor-frame">
+<a href="#" data-target="stack-frame-1">
+<span class="stack-function">⟩ Cake\Http\ControllerFactory-&gt;create</span>
+<span class="stack-file">
+CORE/src/Http/ActionDispatcher.php, line 90 </span>
+</a>
+</li>
+<li class="stack-frame vendor-frame">
+<a href="#" data-target="stack-frame-2">
+<span class="stack-function">⟩ Cake\Http\ActionDispatcher-&gt;dispatch</span>
+<span class="stack-file">
+CORE/src/Http/BaseApplication.php, line 103 </span>
+</a>
+</li>
+<li class="stack-frame vendor-frame">
+<a href="#" data-target="stack-frame-3">
+<span class="stack-function">⟩ Cake\Http\BaseApplication-&gt;__invoke</span>
+<span class="stack-file">
+CORE/src/Http/Runner.php, line 64 </span>
+</a>
+</li>
+<li class="stack-frame vendor-frame">
+<a href="#" data-target="stack-frame-4">
+<span class="stack-function">⟩ Cake\Http\Runner-&gt;__invoke</span>
+<span class="stack-file">
+CORE/src/Routing/Middleware/RoutingMiddleware.php, line 107 </span>
+</a>
+</li>
+<li class="stack-frame vendor-frame">
+<a href="#" data-target="stack-frame-5">
+<span class="stack-function">⟩ Cake\Routing\Middleware\RoutingMiddleware-&gt;__invoke</span>
+<span class="stack-file">
+CORE/src/Http/Runner.php, line 64 </span>
+</a>
+</li>
+<li class="stack-frame vendor-frame">
+<a href="#" data-target="stack-frame-6">
+<span class="stack-function">⟩ Cake\Http\Runner-&gt;__invoke</span>
+<span class="stack-file">
+CORE/src/Routing/Middleware/AssetMiddleware.php, line 97 </span>
+</a>
+</li>
+<li class="stack-frame vendor-frame">
+<a href="#" data-target="stack-frame-7">
+<span class="stack-function">⟩ Cake\Routing\Middleware\AssetMiddleware-&gt;__invoke</span>
+<span class="stack-file">
+CORE/src/Http/Runner.php, line 64 </span>
+</a>
+</li>
+<li class="stack-frame vendor-frame">
+<a href="#" data-target="stack-frame-8">
+<span class="stack-function">⟩ Cake\Http\Runner-&gt;__invoke</span>
+<span class="stack-file">
+CORE/src/Error/Middleware/ErrorHandlerMiddleware.php, line 95 </span>
+</a>
+</li>
+<li class="stack-frame vendor-frame">
+<a href="#" data-target="stack-frame-9">
+<span class="stack-function">⟩ Cake\Error\Middleware\ErrorHandlerMiddleware-&gt;__invoke</span>
+<span class="stack-file">
+CORE/src/Http/Runner.php, line 64 </span>
+</a>
+</li>
+<li class="stack-frame vendor-frame">
+<a href="#" data-target="stack-frame-10">
+<span class="stack-function">⟩ Cake\Http\Runner-&gt;__invoke</span>
+<span class="stack-file">
+CORE/src/Http/Runner.php, line 51 </span>
+</a>
+</li>
+<li class="stack-frame vendor-frame">
+<a href="#" data-target="stack-frame-11">
+<span class="stack-function">⟩ Cake\Http\Runner-&gt;run</span>
+<span class="stack-file">
+CORE/src/Http/Server.php, line 80 </span>
+</a>
+</li>
+<li class="stack-frame vendor-frame">
+<a href="#" data-target="stack-frame-12">
+<span class="stack-function">⟩ Cake\Http\Server-&gt;run</span>
+<span class="stack-file">
+ROOT/webroot/index.php, line 35 </span>
+</a>
+</li>
+</ul>
+</div>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="aab401e1f26f68f05515d1ab-text/javascript">
+function bindEvent(selector, eventName, listener) {
+    var els = document.querySelectorAll(selector);
+    for (var i = 0, len = els.length; i < len; i++) {
+        els[i].addEventListener(eventName, listener, false);
+    }
+}
+
+function toggleElement(el) {
+    if (el.style.display === 'none') {
+        el.style.display = 'block';
+    } else {
+        el.style.display = 'none';
+    }
+}
+
+function each(els, cb) {
+    var i, len;
+    for (i = 0, len = els.length; i < len; i++) {
+        cb(els[i], i);
+    }
+}
+
+window.addEventListener('load', function() {
+    bindEvent('.stack-frame-args', 'click', function(event) {
+        var target = this.dataset['target'];
+        var el = document.getElementById(target);
+        toggleElement(el);
+        event.preventDefault();
+    });
+
+    var details = document.querySelectorAll('.stack-details');
+    var frames = document.querySelectorAll('.stack-frame');
+    bindEvent('.stack-frame a', 'click', function(event) {
+        each(frames, function(el) {
+            el.classList.remove('active');
+        });
+        this.parentNode.classList.add('active');
+
+        each(details, function(el) {
+            el.style.display = 'none';
+        });
+
+        var target = document.getElementById(this.dataset['target']);
+        toggleElement(target);
+        event.preventDefault();
+    });
+
+    bindEvent('.toggle-vendor-frames', 'click', function(event) {
+        each(frames, function(el) {
+            if (el.classList.contains('vendor-frame')) {
+                toggleElement(el);
+            }
+        });
+        event.preventDefault();
+    });
+});
+</script>
+<script src="js/rocket-loader.min.js" data-cf-settings="aab401e1f26f68f05515d1ab-|49" defer=""></script>
+
+</body></html>
